@@ -23,6 +23,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Authorization;
 using NSwag.Generation.Processors.Security;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using FullStack.Domain.Infrastructure.Config;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -133,8 +134,7 @@ namespace FullStack.Api.Extensions
                 .AddSigningCredential(new X509Certificate2(Path.Combine(hostingEnviroment.ContentRootPath, "Certs", IdentityServerApiConstants.SecurityConstants.PfxName)))
                 .AddInMemoryApiResources(IdentityServerSettings.GetApiResources())
                 .AddInMemoryClients(IdentityServerSettings.GetClients())
-                .AddAspNetIdentity<AspNetUser>()
-                .AddCustomUserStore();
+                .AddAspNetIdentity<AppUser>();
 
             return services;
         }

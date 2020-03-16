@@ -58,11 +58,8 @@ namespace FullStack.Api
 
         public void Configure(IApplicationBuilder app)
         {
-            if (WebHostingEnvironment.IsDevelopment())
-            {
-            }
-            else
-            {
+            if (WebHostingEnvironment.IsProduction())
+            {            
                 app.UseHsts();
             }
 
