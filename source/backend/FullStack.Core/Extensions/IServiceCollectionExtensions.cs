@@ -2,11 +2,12 @@
 using System.Reflection;
 using FullStack.Core.Data;
 using FullStack.Core.Helpers;
-using FullStack.Domain.Constants;
 using FullStack.Domain.Entities;
 using Microsoft.AspNetCore.Http;
+using FullStack.Domain.Constants;
 using Microsoft.AspNetCore.Identity;
 using FullStack.Core.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.DataProtection;
 using FullStack.Domain.Interfaces.Business;
@@ -30,7 +31,7 @@ namespace FullStack.Core.Extensions
             services
                 .AddDbContext<EFContext>(options =>
                 {
-                    //options.UseSqlServer(connectionString);
+                    options.UseSqlServer(connectionString);
                     options.EnableSensitiveDataLogging(enableSensitiveData);
                 });
 

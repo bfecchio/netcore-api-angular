@@ -7,16 +7,7 @@
 
         public static class SecurityConstants
         {
-            public const string PfxName = "identity.pfx";
-        }
-
-        public static class StandardScopesConstants
-        { }
-
-        public static class GrantResultMessagesConstants
-        {
-            public const string UserDoesNotExists = "Usuário e/ou senha inválidos.";
-            public const string UnauthorizedUser = "Usuário não autorizado na plataforma.";
+            public const string PfxName = "certificate.pfx";
         }
 
         public static class StandardClaimsConstants

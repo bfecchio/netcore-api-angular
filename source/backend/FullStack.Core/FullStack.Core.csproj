@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Business\Validators\" />
-    <Folder Include="Business\Services\" />
   </ItemGroup>
 
   <ItemGroup>
