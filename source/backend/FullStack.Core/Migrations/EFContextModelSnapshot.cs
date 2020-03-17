@@ -174,7 +174,7 @@ namespace FullStack.Core.Migrations
                             City = "Água Boa",
                             IATA = "HPX",
                             ICAO = "SWHP",
-                            Name = "Água Boa Airport",
+                            Name = "Água Boa",
                             State = "Mato Grosso"
                         },
                         new
@@ -183,7 +183,7 @@ namespace FullStack.Core.Migrations
                             City = "Alegrete",
                             IATA = "ALQ",
                             ICAO = "SSLT",
-                            Name = "Gaudêncio Machado Ramos Airport",
+                            Name = "Gaudêncio Machado Ramos",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -192,7 +192,7 @@ namespace FullStack.Core.Migrations
                             City = "Almeirim",
                             IATA = "GGF",
                             ICAO = "SNYA",
-                            Name = "Almeirim Airport",
+                            Name = "Almeirim",
                             State = "Pará"
                         },
                         new
@@ -201,7 +201,7 @@ namespace FullStack.Core.Migrations
                             City = "Alta Floresta",
                             IATA = "AFL",
                             ICAO = "SBAT",
-                            Name = "Piloto Oswaldo Marques Dias Airport",
+                            Name = "Piloto Oswaldo Marques Dias",
                             State = "Mato Grosso"
                         },
                         new
@@ -210,7 +210,7 @@ namespace FullStack.Core.Migrations
                             City = "Altamira",
                             IATA = "ATM",
                             ICAO = "SBHT",
-                            Name = "Altamira Airport",
+                            Name = "Altamira",
                             State = "Pará"
                         },
                         new
@@ -219,7 +219,7 @@ namespace FullStack.Core.Migrations
                             City = "Apucarana",
                             IATA = "APU",
                             ICAO = "SSAP",
-                            Name = "Capt. João Busse Airport",
+                            Name = "Capt. João Busse",
                             State = "Paraná"
                         },
                         new
@@ -228,7 +228,7 @@ namespace FullStack.Core.Migrations
                             City = "Aracaju",
                             IATA = "AJU",
                             ICAO = "SBAR",
-                            Name = "Santa Maria Airport",
+                            Name = "Santa Maria",
                             State = "Sergipe"
                         },
                         new
@@ -237,7 +237,7 @@ namespace FullStack.Core.Migrations
                             City = "Aracati",
                             IATA = "ARX",
                             ICAO = "SBAC",
-                            Name = "Dragão do Mar Airport",
+                            Name = "Dragão do Mar",
                             State = "Ceará"
                         },
                         new
@@ -246,7 +246,7 @@ namespace FullStack.Core.Migrations
                             City = "Araçatuba",
                             IATA = "ARU",
                             ICAO = "SBAU",
-                            Name = "Dario Guarita Airport",
+                            Name = "Dario Guarita",
                             State = "São Paulo"
                         },
                         new
@@ -255,7 +255,7 @@ namespace FullStack.Core.Migrations
                             City = "Araguaína",
                             IATA = "AUX",
                             ICAO = "SWGN",
-                            Name = "Araguaína Airport",
+                            Name = "Araguaína",
                             State = "Tocantins"
                         },
                         new
@@ -264,7 +264,7 @@ namespace FullStack.Core.Migrations
                             City = "Arapongas",
                             IATA = "APX",
                             ICAO = "SSOG",
-                            Name = "Alberto Bertelli Airport",
+                            Name = "Alberto Bertelli",
                             State = "Paraná"
                         },
                         new
@@ -273,7 +273,7 @@ namespace FullStack.Core.Migrations
                             City = "Arapoti",
                             IATA = "AAG",
                             ICAO = "SSYA",
-                            Name = "Avelino Vieira Airport",
+                            Name = "Avelino Vieira",
                             State = "Paraná"
                         },
                         new
@@ -282,7 +282,7 @@ namespace FullStack.Core.Migrations
                             City = "Araraquara",
                             IATA = "AQA",
                             ICAO = "SBAQ",
-                            Name = "Bartolomeu de Gusmão Airport",
+                            Name = "Bartolomeu de Gusmão",
                             State = "São Paulo"
                         },
                         new
@@ -291,7 +291,7 @@ namespace FullStack.Core.Migrations
                             City = "Araxá",
                             IATA = "AAX",
                             ICAO = "SBAX",
-                            Name = "Araxá Airport",
+                            Name = "Araxá",
                             State = "Minas Gerais"
                         },
                         new
@@ -300,7 +300,7 @@ namespace FullStack.Core.Migrations
                             City = "Aripuanã",
                             IATA = "AIR",
                             ICAO = "SWRP",
-                            Name = "Aripuanã Airport",
+                            Name = "Aripuanã",
                             State = "Mato Grosso"
                         },
                         new
@@ -309,7 +309,7 @@ namespace FullStack.Core.Migrations
                             City = "Armação dos Búzios",
                             IATA = "BZC",
                             ICAO = "SBBZ",
-                            Name = "Umberto Modiano Airport",
+                            Name = "Umberto Modiano",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -318,7 +318,7 @@ namespace FullStack.Core.Migrations
                             City = "Arraias",
                             IATA = "AAI",
                             ICAO = "SWRA",
-                            Name = "Arraias Airport",
+                            Name = "Arraias",
                             State = "Tocantins"
                         },
                         new
@@ -327,7 +327,7 @@ namespace FullStack.Core.Migrations
                             City = "Assis",
                             IATA = "AIF",
                             ICAO = "SNAX",
-                            Name = "Marcelo Pires Halzhausen Airport",
+                            Name = "Marcelo Pires Halzhausen",
                             State = "São Paulo"
                         },
                         new
@@ -336,7 +336,7 @@ namespace FullStack.Core.Migrations
                             City = "Avaré / Arandu",
                             IATA = "QVP",
                             ICAO = "SDRR",
-                            Name = "Comte. Luiz Gonzaga Luth Airport",
+                            Name = "Comte. Luiz Gonzaga Luth",
                             State = "São Paulo"
                         },
                         new
@@ -345,7 +345,7 @@ namespace FullStack.Core.Migrations
                             City = "Bagé",
                             IATA = "BGX",
                             ICAO = "SBBG",
-                            Name = "Comte. Gustavo Kraemer Airport",
+                            Name = "Comte. Gustavo Kraemer",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -354,7 +354,7 @@ namespace FullStack.Core.Migrations
                             City = "Barcelos",
                             IATA = "BAZ",
                             ICAO = "SWBC",
-                            Name = "Barcelos Airport",
+                            Name = "Barcelos",
                             State = "Amazonas"
                         },
                         new
@@ -363,7 +363,7 @@ namespace FullStack.Core.Migrations
                             City = "Barra",
                             IATA = "BQQ",
                             ICAO = "SNBX",
-                            Name = "Barra Airport",
+                            Name = "Barra",
                             State = "Bahia"
                         },
                         new
@@ -372,7 +372,7 @@ namespace FullStack.Core.Migrations
                             City = "Barra do Garças",
                             IATA = "BPG",
                             ICAO = "SBBW",
-                            Name = "Barra do Garças Airport",
+                            Name = "Barra do Garças",
                             State = "Mato Grosso"
                         },
                         new
@@ -381,7 +381,7 @@ namespace FullStack.Core.Migrations
                             City = "Barreiras",
                             IATA = "BRA",
                             ICAO = "SNBR",
-                            Name = "Barreiras Airport",
+                            Name = "Barreiras",
                             State = "Bahia"
                         },
                         new
@@ -390,7 +390,7 @@ namespace FullStack.Core.Migrations
                             City = "Barreirinha",
                             IATA = "",
                             ICAO = "SWBI",
-                            Name = "Barreirinha Airport",
+                            Name = "Barreirinha",
                             State = "Amazonas"
                         },
                         new
@@ -399,7 +399,7 @@ namespace FullStack.Core.Migrations
                             City = "Barreirinhas",
                             IATA = "BRB",
                             ICAO = "SSRS",
-                            Name = "Barreirinhas Airport",
+                            Name = "Barreirinhas",
                             State = "Maranhão"
                         },
                         new
@@ -408,7 +408,7 @@ namespace FullStack.Core.Migrations
                             City = "Barretos",
                             IATA = "BAT",
                             ICAO = "SNBA",
-                            Name = "Chafei Amsei Airport",
+                            Name = "Chafei Amsei",
                             State = "São Paulo"
                         },
                         new
@@ -417,7 +417,7 @@ namespace FullStack.Core.Migrations
                             City = "Bauru",
                             IATA = "BAU",
                             ICAO = "SBBU",
-                            Name = "Comte. João Ribeiro de Barros Airport",
+                            Name = "Comte. João Ribeiro de Barros",
                             State = "São Paulo"
                         },
                         new
@@ -426,7 +426,7 @@ namespace FullStack.Core.Migrations
                             City = "Bauru / Arealva",
                             IATA = "JTC",
                             ICAO = "SBAE",
-                            Name = "Moussa Nakhl Tobias Airport",
+                            Name = "Moussa Nakhl Tobias",
                             State = "São Paulo"
                         },
                         new
@@ -444,7 +444,7 @@ namespace FullStack.Core.Migrations
                             City = "Belém",
                             IATA = "BEL",
                             ICAO = "SBBE",
-                            Name = "Val de Cans-Júlio Cezar Ribeiro International Airport",
+                            Name = "Val de Cans-Júlio Cezar Ribeiro International",
                             State = "Pará"
                         },
                         new
@@ -453,7 +453,7 @@ namespace FullStack.Core.Migrations
                             City = "Belo Horizonte",
                             IATA = "",
                             ICAO = "SBPR",
-                            Name = "Carlos Prates Airport",
+                            Name = "Carlos Prates",
                             State = "Minas Gerais"
                         },
                         new
@@ -462,7 +462,7 @@ namespace FullStack.Core.Migrations
                             City = "Belo Horizonte",
                             IATA = "PLU",
                             ICAO = "SBBH",
-                            Name = "Pampulha-Carlos Drummond de Andrade Airport",
+                            Name = "Pampulha-Carlos Drummond de Andrade",
                             State = "Minas Gerais"
                         },
                         new
@@ -471,7 +471,7 @@ namespace FullStack.Core.Migrations
                             City = "Belo Horizonte / Confins",
                             IATA = "CNF",
                             ICAO = "SBCF",
-                            Name = "Tancredo Neves International Airport",
+                            Name = "Tancredo Neves International",
                             State = "Minas Gerais"
                         },
                         new
@@ -480,7 +480,7 @@ namespace FullStack.Core.Migrations
                             City = "Belo Jardim",
                             IATA = "",
                             ICAO = "SNBJ",
-                            Name = "Belo Jardim Airport",
+                            Name = "Belo Jardim",
                             State = "Pernambuco"
                         },
                         new
@@ -489,7 +489,7 @@ namespace FullStack.Core.Migrations
                             City = "Boa Vista",
                             IATA = "BVB",
                             ICAO = "SBBV",
-                            Name = "Atlas Brasil Cantanhede International Airport",
+                            Name = "Atlas Brasil Cantanhede International",
                             State = "Roraima"
                         },
                         new
@@ -498,7 +498,7 @@ namespace FullStack.Core.Migrations
                             City = "Bom Jesus da Lapa",
                             IATA = "LAZ",
                             ICAO = "SBLP",
-                            Name = "Bom Jesus da Lapa Airport",
+                            Name = "Bom Jesus da Lapa",
                             State = "Bahia"
                         },
                         new
@@ -507,7 +507,7 @@ namespace FullStack.Core.Migrations
                             City = "Bonito",
                             IATA = "BYO",
                             ICAO = "SBDB",
-                            Name = "Bonito Airport",
+                            Name = "Bonito",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -516,7 +516,7 @@ namespace FullStack.Core.Migrations
                             City = "Borba",
                             IATA = "RBB",
                             ICAO = "SWBR",
-                            Name = "Borba Airport",
+                            Name = "Borba",
                             State = "Amazonas"
                         },
                         new
@@ -525,7 +525,7 @@ namespace FullStack.Core.Migrations
                             City = "Bragança Paulista",
                             IATA = "BJP",
                             ICAO = "SDBP",
-                            Name = "Arthur Siqueira Airport",
+                            Name = "Arthur Siqueira",
                             State = "São Paulo"
                         },
                         new
@@ -534,7 +534,7 @@ namespace FullStack.Core.Migrations
                             City = "Brasília",
                             IATA = "BSB",
                             ICAO = "SBBR",
-                            Name = "Pres. Juscelino Kubitschek International Airport",
+                            Name = "Pres. Juscelino Kubitschek International",
                             State = "Federal District"
                         },
                         new
@@ -543,7 +543,7 @@ namespace FullStack.Core.Migrations
                             City = "Breves",
                             IATA = "BVS",
                             ICAO = "SNVS",
-                            Name = "Breves Airport",
+                            Name = "Breves",
                             State = "Pará"
                         },
                         new
@@ -552,7 +552,7 @@ namespace FullStack.Core.Migrations
                             City = "Cabo Frio",
                             IATA = "CFB",
                             ICAO = "SBCB",
-                            Name = "Cabo Frio International Airport",
+                            Name = "Cabo Frio International",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -561,7 +561,7 @@ namespace FullStack.Core.Migrations
                             City = "Caçador",
                             IATA = "CFC",
                             ICAO = "SBCD",
-                            Name = "Carlos Alberto da Costa Neves Airport",
+                            Name = "Carlos Alberto da Costa Neves",
                             State = "Santa Catarina"
                         },
                         new
@@ -570,7 +570,7 @@ namespace FullStack.Core.Migrations
                             City = "Cachoeiro de Itapemirim",
                             IATA = "CDI",
                             ICAO = "SNKI",
-                            Name = "Raimundo de Andrade Airport",
+                            Name = "Raimundo de Andrade",
                             State = "Espírito Santo"
                         },
                         new
@@ -579,7 +579,7 @@ namespace FullStack.Core.Migrations
                             City = "Cacoal",
                             IATA = "OAL",
                             ICAO = "SSKW",
-                            Name = "Capital do Café Airport",
+                            Name = "Capital do Café",
                             State = "Rondônia"
                         },
                         new
@@ -588,7 +588,7 @@ namespace FullStack.Core.Migrations
                             City = "Caldas Novas / Rio Quente",
                             IATA = "CLV",
                             ICAO = "SBCN",
-                            Name = "Nelson Ribeiro Guimarães Airport",
+                            Name = "Nelson Ribeiro Guimarães",
                             State = "Goiás"
                         },
                         new
@@ -597,7 +597,7 @@ namespace FullStack.Core.Migrations
                             City = "Campina Grande",
                             IATA = "CPV",
                             ICAO = "SBKG",
-                            Name = "Pres. João Suassuna Airport",
+                            Name = "Pres. João Suassuna",
                             State = "Paraíba"
                         },
                         new
@@ -606,7 +606,7 @@ namespace FullStack.Core.Migrations
                             City = "Campinas",
                             IATA = "",
                             ICAO = "SDAM",
-                            Name = "Campo dos Amarais Airport",
+                            Name = "Campo dos Amarais",
                             State = "São Paulo"
                         },
                         new
@@ -615,7 +615,7 @@ namespace FullStack.Core.Migrations
                             City = "Campinas",
                             IATA = "VCP",
                             ICAO = "SBKP",
-                            Name = "Viracopos International Airport",
+                            Name = "Viracopos International",
                             State = "São Paulo"
                         },
                         new
@@ -624,7 +624,7 @@ namespace FullStack.Core.Migrations
                             City = "Campo Grande",
                             IATA = "CGR",
                             ICAO = "SBCG",
-                            Name = "Campo Grande International Airport",
+                            Name = "Campo Grande International",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -633,7 +633,7 @@ namespace FullStack.Core.Migrations
                             City = "Campo Mourão",
                             IATA = "CBW",
                             ICAO = "SSKM",
-                            Name = "Cel. Geraldo Guias de Aquino Airport",
+                            Name = "Cel. Geraldo Guias de Aquino",
                             State = "Paraná"
                         },
                         new
@@ -642,7 +642,7 @@ namespace FullStack.Core.Migrations
                             City = "Campos dos Goytacazes",
                             IATA = "CAW",
                             ICAO = "SBCP",
-                            Name = "Bartolomeu Lysandro Airport",
+                            Name = "Bartolomeu Lysandro",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -651,7 +651,7 @@ namespace FullStack.Core.Migrations
                             City = "Carajás (Parauapebas)",
                             IATA = "CKS",
                             ICAO = "SBCJ",
-                            Name = "Carajás Airport",
+                            Name = "Carajás",
                             State = "Pará"
                         },
                         new
@@ -660,7 +660,7 @@ namespace FullStack.Core.Migrations
                             City = "Carauari",
                             IATA = "CAF",
                             ICAO = "SWCA",
-                            Name = "Carauari Airport",
+                            Name = "Carauari",
                             State = "Amazonas"
                         },
                         new
@@ -669,7 +669,7 @@ namespace FullStack.Core.Migrations
                             City = "Caravelas",
                             IATA = "CRQ",
                             ICAO = "SBCV",
-                            Name = "Caravelas Airport",
+                            Name = "Caravelas",
                             State = "Bahia"
                         },
                         new
@@ -678,7 +678,7 @@ namespace FullStack.Core.Migrations
                             City = "Carolina",
                             IATA = "CLN",
                             ICAO = "SBCI",
-                            Name = "Carolina Airport",
+                            Name = "Carolina",
                             State = "Maranhão"
                         },
                         new
@@ -687,7 +687,7 @@ namespace FullStack.Core.Migrations
                             City = "Caruaru",
                             IATA = "CAU",
                             ICAO = "SNRU",
-                            Name = "Oscar Laranjeiras Airport",
+                            Name = "Oscar Laranjeiras",
                             State = "Pernambuco"
                         },
                         new
@@ -696,7 +696,7 @@ namespace FullStack.Core.Migrations
                             City = "Cascavel",
                             IATA = "CAC",
                             ICAO = "SBCA",
-                            Name = "Adalberto Mendes da Silva Airport",
+                            Name = "Adalberto Mendes da Silva",
                             State = "Paraná"
                         },
                         new
@@ -714,7 +714,7 @@ namespace FullStack.Core.Migrations
                             City = "Chapecó",
                             IATA = "XAP",
                             ICAO = "SBCH",
-                            Name = "Serafin Enoss Bertaso Airport",
+                            Name = "Serafin Enoss Bertaso",
                             State = "Santa Catarina"
                         },
                         new
@@ -723,7 +723,7 @@ namespace FullStack.Core.Migrations
                             City = "Cianorte",
                             IATA = "QCN",
                             ICAO = "SSCT",
-                            Name = "Gastão de Mesquita Filho Airport",
+                            Name = "Gastão de Mesquita Filho",
                             State = "Paraná"
                         },
                         new
@@ -732,7 +732,7 @@ namespace FullStack.Core.Migrations
                             City = "Coari",
                             IATA = "CIZ",
                             ICAO = "SWKO",
-                            Name = "Coari Airport",
+                            Name = "Coari",
                             State = "Amazonas"
                         },
                         new
@@ -741,7 +741,7 @@ namespace FullStack.Core.Migrations
                             City = "Conceição do Araguaia",
                             IATA = "CDJ",
                             ICAO = "SBAA",
-                            Name = "Conceição do Araguaia Airport",
+                            Name = "Conceição do Araguaia",
                             State = "Pará"
                         },
                         new
@@ -750,7 +750,7 @@ namespace FullStack.Core.Migrations
                             City = "Concórdia",
                             IATA = "CCI",
                             ICAO = "SSCK",
-                            Name = "Olavo Cecco Rigon Airport",
+                            Name = "Olavo Cecco Rigon",
                             State = "Santa Catarina"
                         },
                         new
@@ -759,7 +759,7 @@ namespace FullStack.Core.Migrations
                             City = "Confresa",
                             IATA = "CFO",
                             ICAO = "SWKF",
-                            Name = "Confresa Airport",
+                            Name = "Confresa",
                             State = "Mato Grosso"
                         },
                         new
@@ -768,7 +768,7 @@ namespace FullStack.Core.Migrations
                             City = "Cornélio Procópio",
                             IATA = "CKO",
                             ICAO = "SSCP",
-                            Name = "Francisco Lacerda Junior Airport",
+                            Name = "Francisco Lacerda Junior",
                             State = "Paraná"
                         },
                         new
@@ -777,7 +777,7 @@ namespace FullStack.Core.Migrations
                             City = "Corumbá",
                             IATA = "CMG",
                             ICAO = "SBCR",
-                            Name = "Corumbá International Airport",
+                            Name = "Corumbá International",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -786,7 +786,7 @@ namespace FullStack.Core.Migrations
                             City = "Criciúma / Forquilhinha",
                             IATA = "CCM",
                             ICAO = "SBCM",
-                            Name = "Diomício Freitas Airport",
+                            Name = "Diomício Freitas",
                             State = "Santa Catarina"
                         },
                         new
@@ -795,7 +795,7 @@ namespace FullStack.Core.Migrations
                             City = "Cruzeiro do Sul",
                             IATA = "CZS",
                             ICAO = "SBCZ",
-                            Name = "Cruzeiro do Sul International Airport",
+                            Name = "Cruzeiro do Sul International",
                             State = "Acre"
                         },
                         new
@@ -804,7 +804,7 @@ namespace FullStack.Core.Migrations
                             City = "Cuiabá / Várzea Grande",
                             IATA = "CGB",
                             ICAO = "SBCY",
-                            Name = "Mal. Rondon International Airport",
+                            Name = "Mal. Rondon International",
                             State = "Mato Grosso"
                         },
                         new
@@ -813,7 +813,7 @@ namespace FullStack.Core.Migrations
                             City = "Curitiba",
                             IATA = "BFH",
                             ICAO = "SBBI",
-                            Name = "Bacacheri Airport",
+                            Name = "Bacacheri",
                             State = "Paraná"
                         },
                         new
@@ -822,7 +822,7 @@ namespace FullStack.Core.Migrations
                             City = "Curitiba / São José dos Pinhais",
                             IATA = "CWB",
                             ICAO = "SBCT",
-                            Name = "Afonso Pena International Airport",
+                            Name = "Afonso Pena International",
                             State = "Paraná"
                         },
                         new
@@ -831,7 +831,7 @@ namespace FullStack.Core.Migrations
                             City = "Diamantina",
                             IATA = "DTI",
                             ICAO = "SNDT",
-                            Name = "Juscelino Kubitschek Airport",
+                            Name = "Juscelino Kubitschek",
                             State = "Minas Gerais"
                         },
                         new
@@ -840,7 +840,7 @@ namespace FullStack.Core.Migrations
                             City = "Divinópolis",
                             IATA = "DIQ",
                             ICAO = "SNDV",
-                            Name = "Brig. Cabral Airport",
+                            Name = "Brig. Cabral",
                             State = "Minas Gerais"
                         },
                         new
@@ -849,7 +849,7 @@ namespace FullStack.Core.Migrations
                             City = "Dourados",
                             IATA = "DOU",
                             ICAO = "SBDO",
-                            Name = "Francisco de Matos Pereira Airport",
+                            Name = "Francisco de Matos Pereira",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -858,7 +858,7 @@ namespace FullStack.Core.Migrations
                             City = "Eirunepé",
                             IATA = "ERN",
                             ICAO = "SWEI",
-                            Name = "Amaury Feitosa Tomaz Airport",
+                            Name = "Amaury Feitosa Tomaz",
                             State = "Amazonas"
                         },
                         new
@@ -867,7 +867,7 @@ namespace FullStack.Core.Migrations
                             City = "Erechim",
                             IATA = "ERM",
                             ICAO = "SSER",
-                            Name = "Erechim Airport",
+                            Name = "Erechim",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -876,7 +876,7 @@ namespace FullStack.Core.Migrations
                             City = "Feijó",
                             IATA = "FEJ",
                             ICAO = "SNOU",
-                            Name = "Feijó Airport",
+                            Name = "Feijó",
                             State = "Acre"
                         },
                         new
@@ -885,7 +885,7 @@ namespace FullStack.Core.Migrations
                             City = "Feira de Santana",
                             IATA = "FEC",
                             ICAO = "SBFE",
-                            Name = "João Durval Carneiro Airport",
+                            Name = "João Durval Carneiro",
                             State = "Bahia"
                         },
                         new
@@ -894,7 +894,7 @@ namespace FullStack.Core.Migrations
                             City = "Fernando de Noronha",
                             IATA = "FEN",
                             ICAO = "SBFN",
-                            Name = "Fernando de Noronha Airport",
+                            Name = "Fernando de Noronha",
                             State = "Pernambuco"
                         },
                         new
@@ -903,7 +903,7 @@ namespace FullStack.Core.Migrations
                             City = "Florianópolis",
                             IATA = "FLN",
                             ICAO = "SBFL",
-                            Name = "Hercílio Luz International Airport",
+                            Name = "Hercílio Luz International",
                             State = "Santa Catarina"
                         },
                         new
@@ -912,7 +912,7 @@ namespace FullStack.Core.Migrations
                             City = "Fonte Boa",
                             IATA = "FBA",
                             ICAO = "SWOB",
-                            Name = "Fonte Boa Airport",
+                            Name = "Fonte Boa",
                             State = "Amazonas"
                         },
                         new
@@ -921,7 +921,7 @@ namespace FullStack.Core.Migrations
                             City = "Fortaleza",
                             IATA = "FOR",
                             ICAO = "SBFZ",
-                            Name = "Pinto Martins – Fortaleza International Airport",
+                            Name = "Pinto Martins – Fortaleza International",
                             State = "Ceará"
                         },
                         new
@@ -930,7 +930,7 @@ namespace FullStack.Core.Migrations
                             City = "Foz do Iguaçu",
                             IATA = "IGU",
                             ICAO = "SBFI",
-                            Name = "Cataratas International Airport",
+                            Name = "Cataratas International",
                             State = "Paraná"
                         },
                         new
@@ -939,7 +939,7 @@ namespace FullStack.Core.Migrations
                             City = "Franca",
                             IATA = "FRC",
                             ICAO = "SIMK",
-                            Name = "Ten. Lund Presotto Airport",
+                            Name = "Ten. Lund Presotto",
                             State = "São Paulo"
                         },
                         new
@@ -948,7 +948,7 @@ namespace FullStack.Core.Migrations
                             City = "Francisco Beltrão",
                             IATA = "FBE",
                             ICAO = "SSFB",
-                            Name = "Paulo Abdala Airport",
+                            Name = "Paulo Abdala",
                             State = "Paraná"
                         },
                         new
@@ -957,7 +957,7 @@ namespace FullStack.Core.Migrations
                             City = "Garanhuns",
                             IATA = "QGP",
                             ICAO = "SNGN",
-                            Name = "Garanhuns Airport",
+                            Name = "Garanhuns",
                             State = "Pernambuco"
                         },
                         new
@@ -984,7 +984,7 @@ namespace FullStack.Core.Migrations
                             City = "Goiânia",
                             IATA = "GYN",
                             ICAO = "SBGO",
-                            Name = "Santa Genoveva Airport",
+                            Name = "Santa Genoveva",
                             State = "Goiás"
                         },
                         new
@@ -993,7 +993,7 @@ namespace FullStack.Core.Migrations
                             City = "Governador Valadares",
                             IATA = "GVR",
                             ICAO = "SBGV",
-                            Name = "Cel. Altino Machado de Oliveira Airport",
+                            Name = "Cel. Altino Machado de Oliveira",
                             State = "Minas Gerais"
                         },
                         new
@@ -1002,7 +1002,7 @@ namespace FullStack.Core.Migrations
                             City = "Guaíra",
                             IATA = "GGJ",
                             ICAO = "SSGY",
-                            Name = "Walter Martins de Oliveira Airport",
+                            Name = "Walter Martins de Oliveira",
                             State = "Paraná"
                         },
                         new
@@ -1011,7 +1011,7 @@ namespace FullStack.Core.Migrations
                             City = "Guanambi",
                             IATA = "GNM",
                             ICAO = "SNGI",
-                            Name = "Guanambi Airport",
+                            Name = "Guanambi",
                             State = "Bahia"
                         },
                         new
@@ -1020,7 +1020,7 @@ namespace FullStack.Core.Migrations
                             City = "Guarapuava",
                             IATA = "GPB",
                             ICAO = "SBGU",
-                            Name = "Tancredo Thomas de Faria Airport",
+                            Name = "Tancredo Thomas de Faria",
                             State = "Paraná"
                         },
                         new
@@ -1029,7 +1029,7 @@ namespace FullStack.Core.Migrations
                             City = "Gurupi",
                             IATA = "GRP",
                             ICAO = "SWGI",
-                            Name = "Gurupi Airport",
+                            Name = "Gurupi",
                             State = "Tocantins"
                         },
                         new
@@ -1038,7 +1038,7 @@ namespace FullStack.Core.Migrations
                             City = "Humaitá",
                             IATA = "HUW",
                             ICAO = "SWHT",
-                            Name = "Francisco Correa da Cruz Airport",
+                            Name = "Francisco Correa da Cruz",
                             State = "Amazonas"
                         },
                         new
@@ -1047,7 +1047,7 @@ namespace FullStack.Core.Migrations
                             City = "Ijuí",
                             IATA = "IJU",
                             ICAO = "SSIJ",
-                            Name = "João Batista Bos Filho Airport",
+                            Name = "João Batista Bos Filho",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1056,7 +1056,7 @@ namespace FullStack.Core.Migrations
                             City = "Ilhéus",
                             IATA = "IOS",
                             ICAO = "SBIL",
-                            Name = "Jorge Amado Airport",
+                            Name = "Jorge Amado",
                             State = "Bahia"
                         },
                         new
@@ -1065,7 +1065,7 @@ namespace FullStack.Core.Migrations
                             City = "Imperatriz",
                             IATA = "IMP",
                             ICAO = "SBIZ",
-                            Name = "Pref. Renato Moreira Airport",
+                            Name = "Pref. Renato Moreira",
                             State = "Maranhão"
                         },
                         new
@@ -1074,7 +1074,7 @@ namespace FullStack.Core.Migrations
                             City = "Ipatinga / Santana do Paraíso",
                             IATA = "IPN",
                             ICAO = "SBIP",
-                            Name = "Usiminas Airport",
+                            Name = "Usiminas",
                             State = "Minas Gerais"
                         },
                         new
@@ -1083,7 +1083,7 @@ namespace FullStack.Core.Migrations
                             City = "Itaituba",
                             IATA = "ITB",
                             ICAO = "SBIH",
-                            Name = "Itaituba Airport",
+                            Name = "Itaituba",
                             State = "Pará"
                         },
                         new
@@ -1092,7 +1092,7 @@ namespace FullStack.Core.Migrations
                             City = "Itanhaém",
                             IATA = "",
                             ICAO = "SDIM",
-                            Name = "Antônio Ribeiro Nogueira Jr. Airport",
+                            Name = "Antônio Ribeiro Nogueira Jr.",
                             State = "São Paulo"
                         },
                         new
@@ -1101,7 +1101,7 @@ namespace FullStack.Core.Migrations
                             City = "Itumbiara",
                             IATA = "ITR",
                             ICAO = "SBIT",
-                            Name = "Francisco Vilela do Amaral Airport",
+                            Name = "Francisco Vilela do Amaral",
                             State = "Goiás"
                         },
                         new
@@ -1110,7 +1110,7 @@ namespace FullStack.Core.Migrations
                             City = "Jaguaruna",
                             IATA = "JJG",
                             ICAO = "SBJA",
-                            Name = "Humberto Ghizzo Bortoluzzi Regional Airport",
+                            Name = "Humberto Ghizzo Bortoluzzi Regional",
                             State = "Santa Catarina"
                         },
                         new
@@ -1119,7 +1119,7 @@ namespace FullStack.Core.Migrations
                             City = "Januária",
                             IATA = "JNA",
                             ICAO = "SNJN",
-                            Name = "Januária Airport",
+                            Name = "Januária",
                             State = "Minas Gerais"
                         },
                         new
@@ -1128,7 +1128,7 @@ namespace FullStack.Core.Migrations
                             City = "Jijoca de Jericoacoara / Cruz",
                             IATA = "JJD",
                             ICAO = "SBJE",
-                            Name = "Comte. Ariston Pessoa Regional Airport",
+                            Name = "Comte. Ariston Pessoa Regional",
                             State = "Ceará"
                         },
                         new
@@ -1137,7 +1137,7 @@ namespace FullStack.Core.Migrations
                             City = "Ji-Paraná",
                             IATA = "JPR",
                             ICAO = "SBJI",
-                            Name = "José Coleto Airport",
+                            Name = "José Coleto",
                             State = "Rondônia"
                         },
                         new
@@ -1146,7 +1146,7 @@ namespace FullStack.Core.Migrations
                             City = "Joaçaba",
                             IATA = "JCB",
                             ICAO = "SSJA",
-                            Name = "Santa Terezinha Airport",
+                            Name = "Santa Terezinha",
                             State = "Santa Catarina"
                         },
                         new
@@ -1155,7 +1155,7 @@ namespace FullStack.Core.Migrations
                             City = "João Pessoa / Bayeux",
                             IATA = "JPA",
                             ICAO = "SBJP",
-                            Name = "Pres. Castro Pinto International Airport",
+                            Name = "Pres. Castro Pinto International",
                             State = "Paraíba"
                         },
                         new
@@ -1164,7 +1164,7 @@ namespace FullStack.Core.Migrations
                             City = "Joinville",
                             IATA = "JOI",
                             ICAO = "SBJV",
-                            Name = "Lauro Carneiro de Loyola Airport",
+                            Name = "Lauro Carneiro de Loyola",
                             State = "Santa Catarina"
                         },
                         new
@@ -1173,7 +1173,7 @@ namespace FullStack.Core.Migrations
                             City = "Juara",
                             IATA = "JUA",
                             ICAO = "SIZX",
-                            Name = "Inácio Luís do Nascimento Airport",
+                            Name = "Inácio Luís do Nascimento",
                             State = "Mato Grosso"
                         },
                         new
@@ -1182,7 +1182,7 @@ namespace FullStack.Core.Migrations
                             City = "Juazeiro do Norte",
                             IATA = "JDO",
                             ICAO = "SBJU",
-                            Name = "Orlando Bezerra de Menezes Airport",
+                            Name = "Orlando Bezerra de Menezes",
                             State = "Ceará"
                         },
                         new
@@ -1191,7 +1191,7 @@ namespace FullStack.Core.Migrations
                             City = "Juína",
                             IATA = "JIA",
                             ICAO = "SWJN",
-                            Name = "Juína Airport",
+                            Name = "Juína",
                             State = "Mato Grosso"
                         },
                         new
@@ -1200,7 +1200,7 @@ namespace FullStack.Core.Migrations
                             City = "Juiz de Fora",
                             IATA = "JDF",
                             ICAO = "SBJF",
-                            Name = "Francisco Álvares de Assis Airport",
+                            Name = "Francisco Álvares de Assis",
                             State = "Minas Gerais"
                         },
                         new
@@ -1218,7 +1218,7 @@ namespace FullStack.Core.Migrations
                             City = "Jundiaí",
                             IATA = "",
                             ICAO = "SBJD",
-                            Name = "Comte. Rodolfo Rolim Amaro Airport",
+                            Name = "Comte. Rodolfo Rolim Amaro",
                             State = "São Paulo"
                         },
                         new
@@ -1227,7 +1227,7 @@ namespace FullStack.Core.Migrations
                             City = "Juruena",
                             IATA = "JRN",
                             ICAO = "SWJU",
-                            Name = "Juruena Airport",
+                            Name = "Juruena",
                             State = "Mato Grosso"
                         },
                         new
@@ -1236,7 +1236,7 @@ namespace FullStack.Core.Migrations
                             City = "Lábrea",
                             IATA = "LBR",
                             ICAO = "SWLB",
-                            Name = "Lábrea Airport",
+                            Name = "Lábrea",
                             State = "Amazonas"
                         },
                         new
@@ -1245,7 +1245,7 @@ namespace FullStack.Core.Migrations
                             City = "Lages",
                             IATA = "LAJ",
                             ICAO = "SBLJ",
-                            Name = "Antônio Correia Pinto de Macedo Airport",
+                            Name = "Antônio Correia Pinto de Macedo",
                             State = "Santa Catarina"
                         },
                         new
@@ -1254,7 +1254,7 @@ namespace FullStack.Core.Migrations
                             City = "Lençóis",
                             IATA = "LEC",
                             ICAO = "SBLE",
-                            Name = "Cel. Horácio de Mattos Airport",
+                            Name = "Cel. Horácio de Mattos",
                             State = "Bahia"
                         },
                         new
@@ -1263,7 +1263,7 @@ namespace FullStack.Core.Migrations
                             City = "Lins",
                             IATA = "LIP",
                             ICAO = "SBLN",
-                            Name = "Gov. Lucas Nogueira Garcez Airport",
+                            Name = "Gov. Lucas Nogueira Garcez",
                             State = "São Paulo"
                         },
                         new
@@ -1272,7 +1272,7 @@ namespace FullStack.Core.Migrations
                             City = "Londrina",
                             IATA = "LDB",
                             ICAO = "SBLO",
-                            Name = "Gov. José Richa Airport",
+                            Name = "Gov. José Richa",
                             State = "Paraná"
                         },
                         new
@@ -1281,7 +1281,7 @@ namespace FullStack.Core.Migrations
                             City = "Lucas do Rio Verde",
                             IATA = "LVR",
                             ICAO = "SILC",
-                            Name = "Bom Futuro Airport",
+                            Name = "Bom Futuro",
                             State = "Mato Grosso"
                         },
                         new
@@ -1290,7 +1290,7 @@ namespace FullStack.Core.Migrations
                             City = "Macaé",
                             IATA = "MEA",
                             ICAO = "SBME",
-                            Name = "Benedito Lacerda Airport",
+                            Name = "Benedito Lacerda",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1299,7 +1299,7 @@ namespace FullStack.Core.Migrations
                             City = "Macapá",
                             IATA = "MCP",
                             ICAO = "SBMQ",
-                            Name = "Alberto Alcolumbre International Airport",
+                            Name = "Alberto Alcolumbre International",
                             State = "Amapá"
                         },
                         new
@@ -1308,7 +1308,7 @@ namespace FullStack.Core.Migrations
                             City = "Maceió",
                             IATA = "MCZ",
                             ICAO = "SBMO",
-                            Name = "Zumbi dos Palmares International Airport",
+                            Name = "Zumbi dos Palmares International",
                             State = "Alagoas"
                         },
                         new
@@ -1317,7 +1317,7 @@ namespace FullStack.Core.Migrations
                             City = "Manaus",
                             IATA = "MAO",
                             ICAO = "SBEG",
-                            Name = "Brig. Eduardo Gomes International Airport",
+                            Name = "Brig. Eduardo Gomes International",
                             State = "Amazonas"
                         },
                         new
@@ -1326,7 +1326,7 @@ namespace FullStack.Core.Migrations
                             City = "Manicoré",
                             IATA = "MNX",
                             ICAO = "SBMY",
-                            Name = "Manicoré Airport",
+                            Name = "Manicoré",
                             State = "Amazonas"
                         },
                         new
@@ -1335,7 +1335,7 @@ namespace FullStack.Core.Migrations
                             City = "Marabá",
                             IATA = "MAB",
                             ICAO = "SBMA",
-                            Name = "João Correa da Rocha Airport",
+                            Name = "João Correa da Rocha",
                             State = "Pará"
                         },
                         new
@@ -1344,7 +1344,7 @@ namespace FullStack.Core.Migrations
                             City = "Maricá",
                             IATA = "",
                             ICAO = "SDMC",
-                            Name = "Maricá Airport",
+                            Name = "Maricá",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1353,7 +1353,7 @@ namespace FullStack.Core.Migrations
                             City = "Marília",
                             IATA = "MII",
                             ICAO = "SBML",
-                            Name = "Frank Miloye Milenkowichi Airport",
+                            Name = "Frank Miloye Milenkowichi",
                             State = "São Paulo"
                         },
                         new
@@ -1362,7 +1362,7 @@ namespace FullStack.Core.Migrations
                             City = "Maringá",
                             IATA = "MGF",
                             ICAO = "SBMG",
-                            Name = "Sílvio Name Júnior Regional Airport",
+                            Name = "Sílvio Name Júnior Regional",
                             State = "Paraná"
                         },
                         new
@@ -1371,7 +1371,7 @@ namespace FullStack.Core.Migrations
                             City = "Matupá",
                             IATA = "MBK",
                             ICAO = "SWXM",
-                            Name = "Orlando Villas-Bôas Regional Airport",
+                            Name = "Orlando Villas-Bôas Regional",
                             State = "Mato Grosso"
                         },
                         new
@@ -1380,7 +1380,7 @@ namespace FullStack.Core.Migrations
                             City = "Maués",
                             IATA = "MBZ",
                             ICAO = "SWMW",
-                            Name = "Maués Airport",
+                            Name = "Maués",
                             State = "Amazonas"
                         },
                         new
@@ -1389,7 +1389,7 @@ namespace FullStack.Core.Migrations
                             City = "Minaçu",
                             IATA = "MQH",
                             ICAO = "SWIQ",
-                            Name = "Minaçu Airport",
+                            Name = "Minaçu",
                             State = "Goiás"
                         },
                         new
@@ -1398,7 +1398,7 @@ namespace FullStack.Core.Migrations
                             City = "Monte Dourado (Almeirim)",
                             IATA = "MEU",
                             ICAO = "SBMD",
-                            Name = "Serra do Areão Airport",
+                            Name = "Serra do Areão",
                             State = "Pará"
                         },
                         new
@@ -1407,7 +1407,7 @@ namespace FullStack.Core.Migrations
                             City = "Montes Claros",
                             IATA = "MOC",
                             ICAO = "SBMK",
-                            Name = "Mário Ribeiro Airport",
+                            Name = "Mário Ribeiro",
                             State = "Minas Gerais"
                         },
                         new
@@ -1416,7 +1416,7 @@ namespace FullStack.Core.Migrations
                             City = "Mossoró",
                             IATA = "MVF",
                             ICAO = "SBMS",
-                            Name = "Gov. Dix-Sept Rosado Airport",
+                            Name = "Gov. Dix-Sept Rosado",
                             State = "Rio Grande do Norte"
                         },
                         new
@@ -1425,7 +1425,7 @@ namespace FullStack.Core.Migrations
                             City = "Natal / São Gonçalo do Amarante",
                             IATA = "NAT",
                             ICAO = "SBSG",
-                            Name = "Gov. Aluízio Alves International Airport",
+                            Name = "Gov. Aluízio Alves International",
                             State = "Rio Grande do Norte"
                         },
                         new
@@ -1434,7 +1434,7 @@ namespace FullStack.Core.Migrations
                             City = "Navegantes",
                             IATA = "NVT",
                             ICAO = "SBNF",
-                            Name = "Min. Victor Konder International Airport",
+                            Name = "Min. Victor Konder International",
                             State = "Santa Catarina"
                         },
                         new
@@ -1443,7 +1443,7 @@ namespace FullStack.Core.Migrations
                             City = "Novo Progresso",
                             IATA = "NPR",
                             ICAO = "SJNP",
-                            Name = "Novo Progresso Airport",
+                            Name = "Novo Progresso",
                             State = "Pará"
                         },
                         new
@@ -1452,7 +1452,7 @@ namespace FullStack.Core.Migrations
                             City = "Oeiras",
                             IATA = "",
                             ICAO = "SNOE",
-                            Name = "Oeiras Airport",
+                            Name = "Oeiras",
                             State = "Piauí"
                         },
                         new
@@ -1461,7 +1461,7 @@ namespace FullStack.Core.Migrations
                             City = "Oriximiná",
                             IATA = "ORX",
                             ICAO = "SNOX",
-                            Name = "Oriximiná Airport",
+                            Name = "Oriximiná",
                             State = "Pará"
                         },
                         new
@@ -1470,7 +1470,7 @@ namespace FullStack.Core.Migrations
                             City = "Ourilândia do Norte",
                             IATA = "OIA",
                             ICAO = "SDOW",
-                            Name = "Ourilândia do Norte Airport",
+                            Name = "Ourilândia do Norte",
                             State = "Pará"
                         },
                         new
@@ -1479,7 +1479,7 @@ namespace FullStack.Core.Migrations
                             City = "Ourinhos",
                             IATA = "OUS",
                             ICAO = "SDOU",
-                            Name = "Jornalista Benedito Pimentel Airport",
+                            Name = "Jornalista Benedito Pimentel",
                             State = "São Paulo"
                         },
                         new
@@ -1488,7 +1488,7 @@ namespace FullStack.Core.Migrations
                             City = "Palmas",
                             IATA = "PMW",
                             ICAO = "SBPJ",
-                            Name = "Brig. Lysias Rodrigues Airport",
+                            Name = "Brig. Lysias Rodrigues",
                             State = "Tocantins"
                         },
                         new
@@ -1497,7 +1497,7 @@ namespace FullStack.Core.Migrations
                             City = "Paranaguá",
                             IATA = "PNG",
                             ICAO = "SSPG",
-                            Name = "Santos Dumont Airport",
+                            Name = "Santos Dumont",
                             State = "Paraná"
                         },
                         new
@@ -1506,7 +1506,7 @@ namespace FullStack.Core.Migrations
                             City = "Paranavaí",
                             IATA = "PVI",
                             ICAO = "SSPI",
-                            Name = "Edu Chaves Airport",
+                            Name = "Edu Chaves",
                             State = "Paraná"
                         },
                         new
@@ -1515,7 +1515,7 @@ namespace FullStack.Core.Migrations
                             City = "Parintins",
                             IATA = "PIN",
                             ICAO = "SWPI",
-                            Name = "Júlio Belém Airport",
+                            Name = "Júlio Belém",
                             State = "Amazonas"
                         },
                         new
@@ -1524,7 +1524,7 @@ namespace FullStack.Core.Migrations
                             City = "Parnaíba",
                             IATA = "PHB",
                             ICAO = "SBPB",
-                            Name = "Pref. Dr. João Silva Filho International Airport",
+                            Name = "Pref. Dr. João Silva Filho International",
                             State = "Piauí"
                         },
                         new
@@ -1533,7 +1533,7 @@ namespace FullStack.Core.Migrations
                             City = "Passo Fundo",
                             IATA = "PFB",
                             ICAO = "SBPF",
-                            Name = "Lauro Kurtz Airport",
+                            Name = "Lauro Kurtz",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1542,7 +1542,7 @@ namespace FullStack.Core.Migrations
                             City = "Pato Branco",
                             IATA = "PTO",
                             ICAO = "SSPB",
-                            Name = "Juvenal Loureiro Cardoso Airport",
+                            Name = "Juvenal Loureiro Cardoso",
                             State = "Paraná"
                         },
                         new
@@ -1551,7 +1551,7 @@ namespace FullStack.Core.Migrations
                             City = "Patos de Minas",
                             IATA = "POJ",
                             ICAO = "SNPD",
-                            Name = "Pedro Pereira dos Santos Airport",
+                            Name = "Pedro Pereira dos Santos",
                             State = "Minas Gerais"
                         },
                         new
@@ -1560,7 +1560,7 @@ namespace FullStack.Core.Migrations
                             City = "Paulo Afonso",
                             IATA = "PAV",
                             ICAO = "SBUF",
-                            Name = "Paulo Afonso Airport",
+                            Name = "Paulo Afonso",
                             State = "Bahia"
                         },
                         new
@@ -1569,7 +1569,7 @@ namespace FullStack.Core.Migrations
                             City = "Pelotas",
                             IATA = "PET",
                             ICAO = "SBPK",
-                            Name = "João Simões Lopes Neto International Airport",
+                            Name = "João Simões Lopes Neto International",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1578,7 +1578,7 @@ namespace FullStack.Core.Migrations
                             City = "Petrolina",
                             IATA = "PNZ",
                             ICAO = "SBPL",
-                            Name = "Sen. Nilo Coelho Airport",
+                            Name = "Sen. Nilo Coelho",
                             State = "Pernambuco"
                         },
                         new
@@ -1587,7 +1587,7 @@ namespace FullStack.Core.Migrations
                             City = "Picos",
                             IATA = "PCS",
                             ICAO = "SNPC",
-                            Name = "Sen. Helvídio Nunes Airport",
+                            Name = "Sen. Helvídio Nunes",
                             State = "Piauí"
                         },
                         new
@@ -1596,7 +1596,7 @@ namespace FullStack.Core.Migrations
                             City = "Poços de Caldas",
                             IATA = "POO",
                             ICAO = "SBPC",
-                            Name = "Emb. Walther Moreira Salles Airport",
+                            Name = "Emb. Walther Moreira Salles",
                             State = "Minas Gerais"
                         },
                         new
@@ -1605,7 +1605,7 @@ namespace FullStack.Core.Migrations
                             City = "Ponta Grossa",
                             IATA = "PGZ",
                             ICAO = "SSZW",
-                            Name = "Comte. Antonio Amilton Beraldo Airport",
+                            Name = "Comte. Antonio Amilton Beraldo",
                             State = "Paraná"
                         },
                         new
@@ -1614,7 +1614,7 @@ namespace FullStack.Core.Migrations
                             City = "Ponta Porã",
                             IATA = "PMG",
                             ICAO = "SBPP",
-                            Name = "Ponta Porã International Airport",
+                            Name = "Ponta Porã International",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -1623,7 +1623,7 @@ namespace FullStack.Core.Migrations
                             City = "Porecatu",
                             IATA = "",
                             ICAO = "SSPK",
-                            Name = "Porecatu Airport",
+                            Name = "Porecatu",
                             State = "Paraná"
                         },
                         new
@@ -1632,7 +1632,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto Alegre",
                             IATA = "POA",
                             ICAO = "SBPA",
-                            Name = "Salgado Filho International Airport",
+                            Name = "Salgado Filho International",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1641,7 +1641,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto de Moz",
                             IATA = "PTQ",
                             ICAO = "SNMZ",
-                            Name = "Porto de Moz Airport",
+                            Name = "Porto de Moz",
                             State = "Pará"
                         },
                         new
@@ -1650,7 +1650,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto Nacional",
                             IATA = "PNB",
                             ICAO = "SBPN",
-                            Name = "Porto Nacional Airport",
+                            Name = "Porto Nacional",
                             State = "Tocantins"
                         },
                         new
@@ -1659,7 +1659,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto Seguro",
                             IATA = "BPS",
                             ICAO = "SBPS",
-                            Name = "Porto Seguro Airport",
+                            Name = "Porto Seguro",
                             State = "Bahia"
                         },
                         new
@@ -1668,7 +1668,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto de Trombetas (Oriximiná)",
                             IATA = "TMT",
                             ICAO = "SBTB",
-                            Name = "Porto de Trombetas Airport",
+                            Name = "Porto de Trombetas",
                             State = "Pará"
                         },
                         new
@@ -1677,7 +1677,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto Urucu (Coari)",
                             IATA = "",
                             ICAO = "SBUY",
-                            Name = "Porto Urucu Airport",
+                            Name = "Porto Urucu",
                             State = "Amazonas"
                         },
                         new
@@ -1686,7 +1686,7 @@ namespace FullStack.Core.Migrations
                             City = "Porto Velho",
                             IATA = "PVH",
                             ICAO = "SBPV",
-                            Name = "Gov. Jorge Teixeira de Oliveira International Airport",
+                            Name = "Gov. Jorge Teixeira de Oliveira International",
                             State = "Rondônia"
                         },
                         new
@@ -1695,7 +1695,7 @@ namespace FullStack.Core.Migrations
                             City = "Presidente Prudente",
                             IATA = "PPB",
                             ICAO = "SBDN",
-                            Name = "Presidente Prudente Airport",
+                            Name = "Presidente Prudente",
                             State = "São Paulo"
                         },
                         new
@@ -1704,7 +1704,7 @@ namespace FullStack.Core.Migrations
                             City = "Recife",
                             IATA = "REC",
                             ICAO = "SBRF",
-                            Name = "Guararapes-Gilberto Freyre International Airport",
+                            Name = "Guararapes-Gilberto Freyre International",
                             State = "Pernambuco"
                         },
                         new
@@ -1713,7 +1713,7 @@ namespace FullStack.Core.Migrations
                             City = "Redenção",
                             IATA = "RDC",
                             ICAO = "SNDC",
-                            Name = "Redenção Airport",
+                            Name = "Redenção",
                             State = "Pará"
                         },
                         new
@@ -1722,7 +1722,7 @@ namespace FullStack.Core.Migrations
                             City = "Resende",
                             IATA = "REZ",
                             ICAO = "SDRS",
-                            Name = "Resende Airport",
+                            Name = "Resende",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1731,7 +1731,7 @@ namespace FullStack.Core.Migrations
                             City = "Ribeirão Preto",
                             IATA = "RAO",
                             ICAO = "SBRP",
-                            Name = "Dr. Leite Lopes Airport",
+                            Name = "Dr. Leite Lopes",
                             State = "São Paulo"
                         },
                         new
@@ -1740,7 +1740,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio Branco",
                             IATA = "RBR",
                             ICAO = "SBRB",
-                            Name = "Plácido de Castro International Airport",
+                            Name = "Plácido de Castro International",
                             State = "Acre"
                         },
                         new
@@ -1749,7 +1749,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio de Janeiro",
                             IATA = "GIG",
                             ICAO = "SBGL",
-                            Name = "Galeão-Antonio Carlos Jobim International Airport",
+                            Name = "Galeão-Antonio Carlos Jobim International",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1758,7 +1758,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio de Janeiro",
                             IATA = "QJR",
                             ICAO = "SBJR",
-                            Name = "Jacarepaguá-Roberto Marinho Airport",
+                            Name = "Jacarepaguá-Roberto Marinho",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1767,7 +1767,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio de Janeiro",
                             IATA = "SDU",
                             ICAO = "SBRJ",
-                            Name = "Santos Dumont Airport",
+                            Name = "Santos Dumont",
                             State = "Rio de Janeiro"
                         },
                         new
@@ -1776,7 +1776,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio Grande",
                             IATA = "RIG",
                             ICAO = "SJRG",
-                            Name = "Rio Grande Regional Airport",
+                            Name = "Rio Grande Regional",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1785,7 +1785,7 @@ namespace FullStack.Core.Migrations
                             City = "Rio Verde",
                             IATA = "RVD",
                             ICAO = "SWLC",
-                            Name = "Gal. Leite de Castro Airport",
+                            Name = "Gal. Leite de Castro",
                             State = "Goiás"
                         },
                         new
@@ -1794,7 +1794,7 @@ namespace FullStack.Core.Migrations
                             City = "Rondonópolis",
                             IATA = "ROO",
                             ICAO = "SWRD",
-                            Name = "Maestro Marinho Franco Airport",
+                            Name = "Maestro Marinho Franco",
                             State = "Mato Grosso"
                         },
                         new
@@ -1812,7 +1812,7 @@ namespace FullStack.Core.Migrations
                             City = "Santa Isabel do Rio Negro",
                             IATA = "IRZ",
                             ICAO = "SWTP",
-                            Name = "Tapuruquara Airport",
+                            Name = "Tapuruquara",
                             State = "Amazonas"
                         },
                         new
@@ -1821,7 +1821,7 @@ namespace FullStack.Core.Migrations
                             City = "Santa Maria",
                             IATA = "RIA",
                             ICAO = "SBSM",
-                            Name = "Santa Maria Airport",
+                            Name = "Santa Maria",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1830,7 +1830,7 @@ namespace FullStack.Core.Migrations
                             City = "Santa Rosa",
                             IATA = "SRA",
                             ICAO = "SSZR",
-                            Name = "Luís Alberto Lehr Airport",
+                            Name = "Luís Alberto Lehr",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1839,7 +1839,7 @@ namespace FullStack.Core.Migrations
                             City = "Santa Terezinha",
                             IATA = "STZ",
                             ICAO = "SWST",
-                            Name = "Santa Terezinha Airport",
+                            Name = "Santa Terezinha",
                             State = "Mato Grosso"
                         },
                         new
@@ -1848,7 +1848,7 @@ namespace FullStack.Core.Migrations
                             City = "Santana do Araguaia",
                             IATA = "CMP",
                             ICAO = "SNKE",
-                            Name = "Santana do Araguaia Airport",
+                            Name = "Santana do Araguaia",
                             State = "Pará"
                         },
                         new
@@ -1857,7 +1857,7 @@ namespace FullStack.Core.Migrations
                             City = "Santarém",
                             IATA = "STM",
                             ICAO = "SBSN",
-                            Name = "Maestro Wilson Fonseca Airport",
+                            Name = "Maestro Wilson Fonseca",
                             State = "Pará"
                         },
                         new
@@ -1866,7 +1866,7 @@ namespace FullStack.Core.Migrations
                             City = "Santiago",
                             IATA = "",
                             ICAO = "SSST",
-                            Name = "Santiago Airport",
+                            Name = "Santiago",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1875,7 +1875,7 @@ namespace FullStack.Core.Migrations
                             City = "Santo Ângelo",
                             IATA = "GEL",
                             ICAO = "SBNM",
-                            Name = "Sepé Tiaraju Airport",
+                            Name = "Sepé Tiaraju",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1884,7 +1884,7 @@ namespace FullStack.Core.Migrations
                             City = "Santo Antônio do Içá",
                             IATA = "IPG",
                             ICAO = "SWII",
-                            Name = "Ipiranga Airport",
+                            Name = "Ipiranga",
                             State = "Amazonas"
                         },
                         new
@@ -1893,7 +1893,7 @@ namespace FullStack.Core.Migrations
                             City = "São Benedito",
                             IATA = "QXY",
                             ICAO = "SWBE",
-                            Name = "Valfrido Salmito de Almeida Airport",
+                            Name = "Valfrido Salmito de Almeida",
                             State = "Ceará"
                         },
                         new
@@ -1902,7 +1902,7 @@ namespace FullStack.Core.Migrations
                             City = "São Borja",
                             IATA = "QOJ",
                             ICAO = "SSSB",
-                            Name = "São Borja Airport",
+                            Name = "São Borja",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -1911,7 +1911,7 @@ namespace FullStack.Core.Migrations
                             City = "São Carlos",
                             IATA = "QSC",
                             ICAO = "SDSC",
-                            Name = "Mário Pereira Lopes Airport",
+                            Name = "Mário Pereira Lopes",
                             State = "São Paulo"
                         },
                         new
@@ -1920,7 +1920,7 @@ namespace FullStack.Core.Migrations
                             City = "São Félix do Araguaia",
                             IATA = "SXO",
                             ICAO = "SWFX",
-                            Name = "São Félix do Araguaia Airport",
+                            Name = "São Félix do Araguaia",
                             State = "Mato Grosso"
                         },
                         new
@@ -1929,7 +1929,7 @@ namespace FullStack.Core.Migrations
                             City = "São Félix do Xingu",
                             IATA = "SXX",
                             ICAO = "SNFX",
-                            Name = "São Félix do Xingu Airport",
+                            Name = "São Félix do Xingu",
                             State = "Pará"
                         },
                         new
@@ -1938,7 +1938,7 @@ namespace FullStack.Core.Migrations
                             City = "São Gabriel da Cachoeira",
                             IATA = "SJL",
                             ICAO = "SBUA",
-                            Name = "São Gabriel da Cachoeira Airport",
+                            Name = "São Gabriel da Cachoeira",
                             State = "Amazonas"
                         },
                         new
@@ -1947,7 +1947,7 @@ namespace FullStack.Core.Migrations
                             City = "São João del-Rei",
                             IATA = "JDR",
                             ICAO = "SNJR",
-                            Name = "Pref. Octávio de Almeida Neves Airport",
+                            Name = "Pref. Octávio de Almeida Neves",
                             State = "Minas Gerais"
                         },
                         new
@@ -1956,7 +1956,7 @@ namespace FullStack.Core.Migrations
                             City = "São José do Rio Preto",
                             IATA = "SJP",
                             ICAO = "SBSR",
-                            Name = "Prof. Eribelto Manoel Reino Airport",
+                            Name = "Prof. Eribelto Manoel Reino",
                             State = "São Paulo"
                         },
                         new
@@ -1965,7 +1965,7 @@ namespace FullStack.Core.Migrations
                             City = "São José dos Campos",
                             IATA = "SJK",
                             ICAO = "SBSJ",
-                            Name = "Prof. Urbano Ernesto Stumpf Airport",
+                            Name = "Prof. Urbano Ernesto Stumpf",
                             State = "São Paulo"
                         },
                         new
@@ -1974,7 +1974,7 @@ namespace FullStack.Core.Migrations
                             City = "São Lourenço",
                             IATA = "SSO",
                             ICAO = "SNLO",
-                            Name = "Comte. Luiz Carlos de Oliveira Airport",
+                            Name = "Comte. Luiz Carlos de Oliveira",
                             State = "Minas Gerais"
                         },
                         new
@@ -1992,7 +1992,7 @@ namespace FullStack.Core.Migrations
                             City = "São Miguel do Oeste",
                             IATA = "SQX",
                             ICAO = "SSOE",
-                            Name = "Hélio Wasum Airport",
+                            Name = "Hélio Wasum",
                             State = "Santa Catarina"
                         },
                         new
@@ -2001,7 +2001,7 @@ namespace FullStack.Core.Migrations
                             City = "São Paulo",
                             IATA = "MAE",
                             ICAO = "SBMT",
-                            Name = "Campo de Marte Airport",
+                            Name = "Campo de Marte",
                             State = "São Paulo"
                         },
                         new
@@ -2010,7 +2010,7 @@ namespace FullStack.Core.Migrations
                             City = "São Paulo",
                             IATA = "CGH",
                             ICAO = "SBSP",
-                            Name = "Congonhas Airport",
+                            Name = "Congonhas",
                             State = "São Paulo"
                         },
                         new
@@ -2028,7 +2028,7 @@ namespace FullStack.Core.Migrations
                             City = "São Paulo de Olivença",
                             IATA = "OLC",
                             ICAO = "SDCG",
-                            Name = "Sen. Eunice Michiles Airport",
+                            Name = "Sen. Eunice Michiles",
                             State = "Amazonas"
                         },
                         new
@@ -2037,7 +2037,7 @@ namespace FullStack.Core.Migrations
                             City = "São Pedro",
                             IATA = "",
                             ICAO = "SDAE",
-                            Name = "São Pedro Airport",
+                            Name = "São Pedro",
                             State = "São Paulo"
                         },
                         new
@@ -2046,7 +2046,7 @@ namespace FullStack.Core.Migrations
                             City = "São Raimundo Nonato",
                             IATA = "",
                             ICAO = "SWKQ",
-                            Name = "Serra da Capivara Airport",
+                            Name = "Serra da Capivara",
                             State = "Piauí"
                         },
                         new
@@ -2055,7 +2055,7 @@ namespace FullStack.Core.Migrations
                             City = "Sinop",
                             IATA = "OPS",
                             ICAO = "SWSI",
-                            Name = "Presidente João Figueiredo Airport",
+                            Name = "Presidente João Figueiredo",
                             State = "Mato Grosso"
                         },
                         new
@@ -2064,7 +2064,7 @@ namespace FullStack.Core.Migrations
                             City = "Sorocaba",
                             IATA = "SOD",
                             ICAO = "SDCO",
-                            Name = "Bertram Luiz Leupolz Airport",
+                            Name = "Bertram Luiz Leupolz",
                             State = "São Paulo"
                         },
                         new
@@ -2073,7 +2073,7 @@ namespace FullStack.Core.Migrations
                             City = "Sorriso",
                             IATA = "SMT",
                             ICAO = "SBSO",
-                            Name = "Adolino Bedin Regional Airport",
+                            Name = "Adolino Bedin Regional",
                             State = "Mato Grosso"
                         },
                         new
@@ -2082,7 +2082,7 @@ namespace FullStack.Core.Migrations
                             City = "Tabatinga",
                             IATA = "TBT",
                             ICAO = "SBTT",
-                            Name = "Tabatinga International Airport",
+                            Name = "Tabatinga International",
                             State = "Amazonas"
                         },
                         new
@@ -2091,7 +2091,7 @@ namespace FullStack.Core.Migrations
                             City = "Tangará da Serra",
                             IATA = "TGQ",
                             ICAO = "SWTS",
-                            Name = "Tangará da Serra Airport",
+                            Name = "Tangará da Serra",
                             State = "Mato Grosso"
                         },
                         new
@@ -2100,7 +2100,7 @@ namespace FullStack.Core.Migrations
                             City = "Tarauacá",
                             IATA = "TRQ",
                             ICAO = "SBTK",
-                            Name = "José Galera dos Santos Airport",
+                            Name = "José Galera dos Santos",
                             State = "Acre"
                         },
                         new
@@ -2109,7 +2109,7 @@ namespace FullStack.Core.Migrations
                             City = "Tefé",
                             IATA = "TFF",
                             ICAO = "SBTF",
-                            Name = "Tefé Airport",
+                            Name = "Tefé",
                             State = "Amazonas"
                         },
                         new
@@ -2118,7 +2118,7 @@ namespace FullStack.Core.Migrations
                             City = "Teixeira de Freitas",
                             IATA = "TXF",
                             ICAO = "SNTF",
-                            Name = "9 de maio Airport",
+                            Name = "9 de maio",
                             State = "Bahia"
                         },
                         new
@@ -2127,7 +2127,7 @@ namespace FullStack.Core.Migrations
                             City = "Telêmaco Borba",
                             IATA = "TEC",
                             ICAO = "SBTL",
-                            Name = "Telêmaco Borba Airport",
+                            Name = "Telêmaco Borba",
                             State = "Paraná"
                         },
                         new
@@ -2136,7 +2136,7 @@ namespace FullStack.Core.Migrations
                             City = "Teófilo Otoni",
                             IATA = "TFL",
                             ICAO = "SNTO",
-                            Name = "Teófilo Otoni Airport",
+                            Name = "Teófilo Otoni",
                             State = "Minas Gerais"
                         },
                         new
@@ -2145,7 +2145,7 @@ namespace FullStack.Core.Migrations
                             City = "Teresina",
                             IATA = "THE",
                             ICAO = "SBTE",
-                            Name = "Sen. Petrônio Portella Airport",
+                            Name = "Sen. Petrônio Portella",
                             State = "Piauí"
                         },
                         new
@@ -2154,7 +2154,7 @@ namespace FullStack.Core.Migrations
                             City = "Toledo",
                             IATA = "TOW",
                             ICAO = "SBTD",
-                            Name = "Luiz dal Canalle Filho Airport",
+                            Name = "Luiz dal Canalle Filho",
                             State = "Paraná"
                         },
                         new
@@ -2163,7 +2163,7 @@ namespace FullStack.Core.Migrations
                             City = "Três Lagoas",
                             IATA = "TJL",
                             ICAO = "SBTG",
-                            Name = "Plínio Alarcom Airport",
+                            Name = "Plínio Alarcom",
                             State = "Mato Grosso do Sul"
                         },
                         new
@@ -2172,7 +2172,7 @@ namespace FullStack.Core.Migrations
                             City = "Tucuruí",
                             IATA = "TUR",
                             ICAO = "SBTU",
-                            Name = "Tucuruí Airport",
+                            Name = "Tucuruí",
                             State = "Pará"
                         },
                         new
@@ -2181,7 +2181,7 @@ namespace FullStack.Core.Migrations
                             City = "Ubatuba",
                             IATA = "UBT",
                             ICAO = "SDUB",
-                            Name = "Gastão Madeira Airport",
+                            Name = "Gastão Madeira",
                             State = "São Paulo"
                         },
                         new
@@ -2190,7 +2190,7 @@ namespace FullStack.Core.Migrations
                             City = "Uberaba",
                             IATA = "UBA",
                             ICAO = "SBUR",
-                            Name = "Mário de Almeida Franco Airport",
+                            Name = "Mário de Almeida Franco",
                             State = "Minas Gerais"
                         },
                         new
@@ -2199,7 +2199,7 @@ namespace FullStack.Core.Migrations
                             City = "Uberlândia",
                             IATA = "UDI",
                             ICAO = "SBUL",
-                            Name = "Ten. Cel. Av. César Bombonato Airport",
+                            Name = "Ten. Cel. Av. César Bombonato",
                             State = "Minas Gerais"
                         },
                         new
@@ -2208,7 +2208,7 @@ namespace FullStack.Core.Migrations
                             City = "Umuarama",
                             IATA = "UMU",
                             ICAO = "SSUM",
-                            Name = "Orlando de Carvalho Airport",
+                            Name = "Orlando de Carvalho",
                             State = "Paraná"
                         },
                         new
@@ -2217,7 +2217,7 @@ namespace FullStack.Core.Migrations
                             City = "Una",
                             IATA = "UNA",
                             ICAO = "SBTC",
-                            Name = "Una-Comandatuba Airport",
+                            Name = "Una-Comandatuba",
                             State = "Bahia"
                         },
                         new
@@ -2226,7 +2226,7 @@ namespace FullStack.Core.Migrations
                             City = "União da Vitória",
                             IATA = "QVB",
                             ICAO = "SSUV",
-                            Name = "José Cleto Airport",
+                            Name = "José Cleto",
                             State = "Paraná"
                         },
                         new
@@ -2235,7 +2235,7 @@ namespace FullStack.Core.Migrations
                             City = "Uruguaiana",
                             IATA = "URG",
                             ICAO = "SBUG",
-                            Name = "Ruben Berta International Airport",
+                            Name = "Ruben Berta International",
                             State = "Rio Grande do Sul"
                         },
                         new
@@ -2244,7 +2244,7 @@ namespace FullStack.Core.Migrations
                             City = "Valença",
                             IATA = "VAL",
                             ICAO = "SNVB",
-                            Name = "Valença Airport",
+                            Name = "Valença",
                             State = "Bahia"
                         },
                         new
@@ -2253,7 +2253,7 @@ namespace FullStack.Core.Migrations
                             City = "Varginha",
                             IATA = "VAG",
                             ICAO = "SBVG",
-                            Name = "Maj. Brig. Trompowsky Airport",
+                            Name = "Maj. Brig. Trompowsky",
                             State = "Minas Gerais"
                         },
                         new
@@ -2262,7 +2262,7 @@ namespace FullStack.Core.Migrations
                             City = "Videira",
                             IATA = "VIA",
                             ICAO = "SSVI",
-                            Name = "Ângelo Ponzoni Airport",
+                            Name = "Ângelo Ponzoni",
                             State = "Santa Catarina"
                         },
                         new
@@ -2271,7 +2271,7 @@ namespace FullStack.Core.Migrations
                             City = "Vilhena",
                             IATA = "BVH",
                             ICAO = "SBVH",
-                            Name = "Brig. Camarão Airport",
+                            Name = "Brig. Camarão",
                             State = "Rondônia"
                         },
                         new
@@ -2289,7 +2289,7 @@ namespace FullStack.Core.Migrations
                             City = "Vitória da Conquista",
                             IATA = "VDC",
                             ICAO = "SSVC",
-                            Name = "Glauber Rocha Airport",
+                            Name = "Glauber Rocha",
                             State = "Bahia"
                         },
                         new
@@ -2298,7 +2298,7 @@ namespace FullStack.Core.Migrations
                             City = "Xinguara",
                             IATA = "XIG",
                             ICAO = "",
-                            Name = "Xinguara Municipal Airport",
+                            Name = "Xinguara Municipal",
                             State = "Pará"
                         });
                 });
@@ -2413,12 +2413,12 @@ namespace FullStack.Core.Migrations
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "NO-REPLY@TEST-FULLSTACK.COM.BR",
-                            NormalizedUserName = "LOCAL\\ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIiw6xBzmAnimmOe6uipscFk6ZcMUZCfbdLBOcH+E5U3E+4B3q8gaCPORp1ZrHElgw==",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHlgKcA2fEPh30kBlkW7v5Nt4vdugPRKVud2ey/BY/rWwZQKBwAbNZQiq7X7agGsDA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "00000000-0000-0000-0000-000000000000",
                             TwoFactorEnabled = false,
-                            UserName = "local\\admin"
+                            UserName = "admin"
                         });
                 });
 

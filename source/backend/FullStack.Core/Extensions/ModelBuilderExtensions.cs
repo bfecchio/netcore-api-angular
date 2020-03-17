@@ -64,8 +64,8 @@ namespace FullStack.Core.Extensions
                 var usuario = new AppUser
                 {
                     Id = Guid.Empty.ToString(),                    
-                    UserName = @"local\admin",
-                    NormalizedUserName = @"LOCAL\ADMIN",
+                    UserName = @"admin",
+                    NormalizedUserName = @"ADMIN",
                     Email = "no-reply@test-fullstack.com.br",
                     NormalizedEmail = "NO-REPLY@TEST-FULLSTACK.COM.BR",
                     EmailConfirmed = true,

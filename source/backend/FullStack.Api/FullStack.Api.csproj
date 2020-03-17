@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <Folder Include="Certs\" />
-    <Folder Include="Contracts\Requests\" />
   </ItemGroup>
 
   <ItemGroup>

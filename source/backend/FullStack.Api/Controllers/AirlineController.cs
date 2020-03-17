@@ -17,25 +17,25 @@ using FullStack.Domain.Interfaces.Business.Services;
 namespace FullStack.Api.Controllers
 {
     [ApiController]
-    [Route("api/v{version:apiVersion}/airports")]
+    [Route("api/v{version:apiVersion}/airlines")]
     [Consumes("application/json"), Produces("application/json")]
-    [OpenApiTag("Airport", Description = "Operações relacionadas aos aéroportos.")]
-    public sealed class AirportController : BaseController
+    [OpenApiTag("Airline", Description = "Operações relacionadas as companias aéreas.")]
+    public class AirlineController : BaseController
     {
         #region Private Read-Only Fields
 
-        private readonly IAirportService _airportService;
+        private readonly IAirlineService _airlineService;
 
         #endregion
 
         #region Constructors
 
-        public AirportController(ILogger<AirportController> logger, IMapper mapper, IUnitOfWork unitOfWork
-            , IAirportService airportService
+        public AirlineController(ILogger<AirlineController> logger, IMapper mapper, IUnitOfWork unitOfWork
+            , IAirlineService airlineService
         )
             : base(logger, mapper, unitOfWork)
         {
-            _airportService = airportService ?? throw new ArgumentNullException(nameof(airportService));
+            _airlineService = airlineService ?? throw new ArgumentNullException(nameof(airlineService));
         }
 
         #endregion
@@ -43,18 +43,17 @@ namespace FullStack.Api.Controllers
         #region Controller Actions
 
         [HttpGet]
-        [ProducesResponseType(typeof(AirportListResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(AirlineListResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> List()
         {
-            var collection = await _airportService.GetAll();
+            var collection = await _airlineService.GetAll();
 
-            return Ok(new AirportListResponse()
+            return Ok(new AirlineListResponse()
             {
-                Data = Mapper.ConvertEntityToSchema<AirportSchema>(collection)
-                    .OrderBy(x => x.State)
-                    .ThenBy(x => x.City)
+                Data = Mapper.ConvertEntityToSchema<AirlineSchema>(collection)
+                    .OrderBy(x => x.Callsign)
             });
         }
 
