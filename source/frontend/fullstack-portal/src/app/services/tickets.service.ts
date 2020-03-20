@@ -16,8 +16,8 @@ export class TicketsService {
   ): Observable<PaginatedList> {
 
     let params = new HttpParams()
-      .set('pageIndex', (pageIndex + 1).toString())
-      .set('pageSize',  (pageSize ?? 5).toString());
+      .set('pageIndex', (pageIndex +  1).toString())
+      .set('pageSize',  (pageSize ?? 10).toString());
 
     if (airlineId) {
       params = params.append('airlineId', airlineId);

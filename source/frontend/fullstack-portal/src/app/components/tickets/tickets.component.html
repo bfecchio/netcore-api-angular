@@ -4,13 +4,8 @@
             <mat-card-title>Tickets list</mat-card-title>
         </mat-card-header>
         <form [formGroup]="searchForm" autocomplete="off">
-            <mat-card-content>
-                <div fxLayout="row">
-                    <button mat-raised-button color="primary">
-                        <mat-icon>add</mat-icon>New ticket
-                    </button>
-                </div>
-                <div fxLayout="row" fxLayoutGap="40px">
+            <mat-card-content>                
+                <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center center">
                     <mat-form-field>
                         <mat-label>Airlines</mat-label>
                         <mat-select formControlName="airline" (selectionChange)="onSearch()">
@@ -41,8 +36,15 @@
                         </mat-select>
                     </mat-form-field>
 
-                </div>
+                    <mat-form-field>
+                        <mat-label>Scheduled</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="scheduled" disabled
+                            (dateChange)="onSearch()">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker disabled="false"></mat-datepicker>
+                    </mat-form-field>
 
+                </div>
                 <div fxLayout="column">
                     <table mat-table [dataSource]="dataSource">
                         <ng-container matColumnDef="ticketId">
@@ -71,20 +73,31 @@
                                 {{ element.scheduled  | date: 'dd/MM/yyyy hh:mm' }}
                             </td>
                         </ng-container>
-                        <ng-container matColumnDef="actions">                                
-                            <th mat-header-cell *matHeaderCellDef></th>
-                            <td mat-cell *matCellDef="let element">
-                                <a (click)="openDialog('update', element)">Edit</a> |
-                                <a (click)="openDialog('delete', element)">Delete</a> 
+                        <ng-container matColumnDef="actions">
+                            <th mat-header-cell *matHeaderCellDef class="text-right">
+                                <button mat-icon-button color="primary" (click)="addTicket()">
+                                    <mat-icon>add</mat-icon>
+                                </button>
+                            </th>                            
+                            <td mat-cell *matCellDef="let element" class="text-right">
+                                <button mat-icon-button color="primary" (click)="editTicket(element)" >
+                                    <mat-icon aria-label="Edit">edit</mat-icon>
+                                </button>
+                                <button mat-icon-button color="primary" (click)="deleteTicket(element)">
+                                    <mat-icon aria-label="Delete">delete</mat-icon>
+                                </button>
                             </td>
                         </ng-container>
 
                         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                     </table>
-                    <mat-paginator
-                        [length]="length" 
-                        [pageSizeOptions]="[5, 10, 20]"
+
+                    <mat-paginator #paginator
+                        [length]="length"
+                        [pageIndex]="0"
+                        [pageSize]="10"
+                        [pageSizeOptions]="[5, 10, 25, 100]"
                         (page)="onChangePaginator($event)">
                     </mat-paginator>
                 </div>

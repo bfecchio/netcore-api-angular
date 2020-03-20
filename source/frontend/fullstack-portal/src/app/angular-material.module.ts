@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
@@ -37,7 +37,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
       MatInputModule,
       MatSelectModule,
       MatRadioModule,
-      MatDatepickerModule,      
+      MatDatepickerModule,
+      MatNativeDateModule,      
       MatChipsModule,
       MatTooltipModule,
       MatTableModule,
@@ -58,6 +59,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
       MatSelectModule,
       MatRadioModule,
       MatDatepickerModule,
+      MatNativeDateModule,
       MatChipsModule,
       MatTooltipModule,
       MatTableModule,

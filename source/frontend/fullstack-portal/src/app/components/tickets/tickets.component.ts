@@ -8,6 +8,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { AirportService } from 'src/app/services/airport.service';
 import { AirlineService } from 'src/app/services/airline.service';
 import { TicketsService } from 'src/app/services/tickets.service';
+import * as moment from 'moment';
+import { MatDialog } from '@angular/material/dialog';
+import { AddDialogComponent } from './add-dialog/add-dialog.component';
 
 @Component({
   selector: 'app-tickets',
@@ -16,29 +19,31 @@ import { TicketsService } from 'src/app/services/tickets.service';
 })
 export class TicketsComponent implements OnInit {
   public searchForm: FormGroup;
-  public displayedColumns: string[] = ['ticketId', 'passenger', 'airline', 'origin', 'destination', 'scheduled', 'actions'];
   public dataSource = new MatTableDataSource<Ticket>();
+  public displayedColumns: string[] = ['ticketId', 'passenger', 'airline', 'origin', 'destination', 'scheduled', 'actions'];
 
   public length: number = null;
   public airlines: Airline[] = [];
   public airports: Airport[] = [];
-  
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   constructor(
     private formBuilder: FormBuilder,
     private ticketService: TicketsService,
     private airportService: AirportService,
-    private airlineService: AirlineService
+    private airlineService: AirlineService,
+    public dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
     this.dataSource.paginator = this.paginator;
-    
+
     this.searchForm = this.formBuilder.group({
       airline: [''],
       origin: [''],
       destination: [''],
+      scheduled: [new Date(), '']
     });
 
 
@@ -46,14 +51,26 @@ export class TicketsComponent implements OnInit {
       .subscribe(res => this.airports = [...res.data]);
 
     this.airlineService.listAll()
-      .subscribe(res => this.airlines = [...res.data]); 
-    
-    this.onSearch();          
+      .subscribe(res => this.airlines = [...res.data]);
+
+    this.onSearch();
   }
 
-  public openDialog(action, obj) {
-console.log('aqui')
+  public addTicket() {
+    const dialogRef = this.dialog.open(AddDialogComponent, {
+      data: { ticket: new Ticket() }
+    });
   }
+
+  public editTicket(ticket: Ticket) {
+    
+  }
+
+   
+  public deleteTicket(ticket: Ticket) {
+    
+  } 
+
 
   public get form() { return this.searchForm.controls; }
 
@@ -68,16 +85,16 @@ console.log('aqui')
       airlineId: this.form.airline.value,
       originId: this.form.origin.value,
       destinationId: this.form.destination.value,
-      scheduled: ""
+      scheduled: (this.form.scheduled.value ? moment(this.form.scheduled.value).format('YYYY-MM-DD') : undefined)
     };
 
     this.ticketService.findAll(params)
-    .subscribe(
-      res => {
-        this.dataSource = new MatTableDataSource<Ticket>(res.data);
-        this.length = res.length;
-      }
-    )
+      .subscribe(
+        res => {
+          this.dataSource = new MatTableDataSource<Ticket>(res.data);
+          this.length = res.length;
+        }
+      )
   }
 
   public onChangePaginator(event: PageEvent) {

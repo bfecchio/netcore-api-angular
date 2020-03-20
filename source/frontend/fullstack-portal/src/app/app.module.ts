@@ -14,14 +14,15 @@ import { TicketsComponent } from './components/tickets/tickets.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { AuthInterceptor } from './middlewares/auth.interceptor';
-
+import { AddDialogComponent } from './components/tickets/add-dialog/add-dialog.component';
 
 
 @NgModule({
   declarations: [    
     AppComponent,
     LoginComponent,
-    TicketsComponent
+    TicketsComponent,
+    AddDialogComponent
   ],
   imports: [
     BrowserModule,

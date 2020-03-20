@@ -1,0 +1,66 @@
+<div class="dialog-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>New ticket</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="form" autocomplete="off">
+            <mat-card-content>
+                <div fxLayout="row">
+                    <mat-form-field fxFill>
+                        <mat-label>Passenger</mat-label>
+                        <input formControlName="passenger" matInput required [value]="passenger">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <mat-form-field fxFill>
+                        <mat-label>Airlines</mat-label>
+                        <mat-select formControlName="airline" required>
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let airline of this.airlines" [value]="airline.airlineId">
+                                {{ airline.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <mat-form-field fxFill>
+                        <mat-label>Origin</mat-label>
+                        <mat-select formControlName="origin" required>
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let airport of this.airports" [value]="airport.airportId">
+                                {{ airport.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" >
+                    <mat-form-field fxFill>
+                        <mat-label>Destination</mat-label>
+                        <mat-select formControlName="destination" required>
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let airport of this.airports" [value]="airport.airportId">
+                                {{ airport.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="end center">
+                    <mat-form-field >
+                        <mat-label>Scheduled</mat-label>
+                        <input matInput formControlName="scheduled" [matDatepicker]="picker" [min]="today" disabled
+                        required>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker disabled="false"></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+            <mat-card-footer>
+                <div fxLayout="row" fxLayoutAlign="start center">
+
+                    <button mat-button color="accent" >Cancel</button>
+                    <button mat-raised-button color="primary">Create</button>
+                </div>
+            </mat-card-footer>
+        </form>
+    </mat-card>
+</div>

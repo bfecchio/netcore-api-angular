@@ -17,6 +17,7 @@ using FullStack.Api.Contracts.Responses;
 using FullStack.Domain.Contracts.Responses;
 using FullStack.Domain.Interfaces.Business;
 using FullStack.Domain.Interfaces.Business.Services;
+using System.Linq;
 
 namespace FullStack.Api.Controllers
 {
@@ -63,12 +64,17 @@ namespace FullStack.Api.Controllers
             if (request.DestinationId.HasValue)
                 predicate = predicate.And(x => x.DestinationId == request.DestinationId.Value);
 
+            if (request.Scheduled.HasValue)
+                predicate = predicate.And(x => x.Scheduled.Date == request.Scheduled.Value.Date);
+
             var result = await _ticketService.PagedList(request.PageIndex, request.PageSize
                 , predicate
+                , orderBy: x => x
+                    .OrderBy(p => p.Scheduled)
                 , include: x => x
-                    .Include(i => i.Airline)
-                    .Include(i => i.Origin)
-                    .Include(i => i.Destination)
+                    .Include(p => p.Airline)
+                    .Include(p => p.Origin)
+                    .Include(p => p.Destination)
             );
 
             return Ok(new TicketListResponse(result.PageIndex, result.PageSize, result.Total)
