@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using System.Linq;
 using NSwag.Annotations;
 using System.Threading.Tasks;
 using FullStack.Core.Helpers;
@@ -17,7 +18,6 @@ using FullStack.Api.Contracts.Responses;
 using FullStack.Domain.Contracts.Responses;
 using FullStack.Domain.Interfaces.Business;
 using FullStack.Domain.Interfaces.Business.Services;
-using System.Linq;
 
 namespace FullStack.Api.Controllers
 {
@@ -111,6 +111,7 @@ namespace FullStack.Api.Controllers
             if (ModelState.IsValid)
             {
                 var entity = Mapper.ConvertRequestToEntity<Ticket>(request);
+                entity.CreatedBy = User.GetUserId();
 
                 await _ticketService.Create(entity);
                 await UnitOfWork.CompleteAsync();

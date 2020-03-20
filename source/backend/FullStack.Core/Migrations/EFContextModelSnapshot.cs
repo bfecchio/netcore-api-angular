@@ -2414,7 +2414,7 @@ namespace FullStack.Core.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "NO-REPLY@TEST-FULLSTACK.COM.BR",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHlgKcA2fEPh30kBlkW7v5Nt4vdugPRKVud2ey/BY/rWwZQKBwAbNZQiq7X7agGsDA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOfSBBFEckky0kfQ1mDIRjM8vghRO4SfUBmlhtUjhgpWDAvKwNLHF2FAz0rzLqIy6w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "00000000-0000-0000-0000-000000000000",
                             TwoFactorEnabled = false,
@@ -2436,13 +2436,10 @@ namespace FullStack.Core.Migrations
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("CreatorId")
-                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("DestinationId")
                         .HasColumnType("int");
@@ -2472,7 +2469,7 @@ namespace FullStack.Core.Migrations
 
                     b.HasIndex("AirlineId");
 
-                    b.HasIndex("CreatorId");
+                    b.HasIndex("CreatedBy");
 
                     b.HasIndex("DestinationId");
 
@@ -2602,8 +2599,9 @@ namespace FullStack.Core.Migrations
 
                     b.HasOne("FullStack.Domain.Entities.AppUser", "Creator")
                         .WithMany()
-                        .HasForeignKey("CreatorId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("CreatedBy")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("FullStack.Domain.Entities.Airport", "Destination")
                         .WithMany()

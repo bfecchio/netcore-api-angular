@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using FullStack.Core.Data;
+using FullStack.Core.Helpers;
 
 namespace FullStack.Api
 {
@@ -25,7 +28,17 @@ namespace FullStack.Api
             try
             {
                 Log.Information("Starting hosting");
-                CreateHostBuilder(args).Build().Run();
+                var host = CreateHostBuilder(args).Build();
+
+                using (var scope = host.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    var dbContext = services.GetRequiredService<EFContext>();
+
+                    DbGeneratorHelper.Create(services);
+                }
+
+                host.Run();
             }
             catch (Exception ex) { Log.Fatal(ex, "Host terminated unexpectedly"); }
             finally { Log.CloseAndFlush(); }

@@ -45,7 +45,7 @@ export class TicketsComponent implements OnInit {
       airline: [''],
       origin: [''],
       destination: [''],
-      scheduled: [new Date(), '']
+      scheduled: ['']
     });
 
 
@@ -70,7 +70,8 @@ export class TicketsComponent implements OnInit {
         return;
       }
 
-      console.log(result);
+      this.ticketService.add(result)
+        .subscribe(_ => this.onSearch());
     });
   }
 

@@ -213,7 +213,6 @@ namespace FullStack.Core.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CreatedBy = table.Column<string>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: false),
-                    CreatorId = table.Column<string>(nullable: true),
                     AirlineId = table.Column<int>(nullable: false),
                     Flight = table.Column<string>(maxLength: 10, nullable: false),
                     Gate = table.Column<string>(maxLength: 10, nullable: false),
@@ -233,8 +232,8 @@ namespace FullStack.Core.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Tickets_AspNetUsers_CreatorId",
-                        column: x => x.CreatorId,
+                        name: "FK_Tickets_AspNetUsers_CreatedBy",
+                        column: x => x.CreatedBy,
                         principalSchema: "dbo",
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -526,7 +525,7 @@ namespace FullStack.Core.Migrations
                 schema: "dbo",
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "00000000-0000-0000-0000-000000000000", 0, "00000000-0000-0000-0000-000000000000", "no-reply@test-fullstack.com.br", true, false, null, "NO-REPLY@TEST-FULLSTACK.COM.BR", "ADMIN", "AQAAAAEAACcQAAAAEHlgKcA2fEPh30kBlkW7v5Nt4vdugPRKVud2ey/BY/rWwZQKBwAbNZQiq7X7agGsDA==", null, false, "00000000-0000-0000-0000-000000000000", false, "admin" });
+                values: new object[] { "00000000-0000-0000-0000-000000000000", 0, "00000000-0000-0000-0000-000000000000", "no-reply@test-fullstack.com.br", true, false, null, "NO-REPLY@TEST-FULLSTACK.COM.BR", "ADMIN", "AQAAAAEAACcQAAAAEOfSBBFEckky0kfQ1mDIRjM8vghRO4SfUBmlhtUjhgpWDAvKwNLHF2FAz0rzLqIy6w==", null, false, "00000000-0000-0000-0000-000000000000", false, "admin" });
 
             migrationBuilder.InsertData(
                 schema: "dbo",
@@ -587,10 +586,10 @@ namespace FullStack.Core.Migrations
                 column: "AirlineId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tickets_CreatorId",
+                name: "IX_Tickets_CreatedBy",
                 schema: "dbo",
                 table: "Tickets",
-                column: "CreatorId");
+                column: "CreatedBy");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_DestinationId",

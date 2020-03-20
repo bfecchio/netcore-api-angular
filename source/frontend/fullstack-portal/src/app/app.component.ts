@@ -9,17 +9,18 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  public isLogged = false;
+  public isLogged: boolean = false;
   public title = 'fullstack-portal';
 
   constructor(
     private router: Router,
     private authService: AuthService
   ) {
-    this.authService.isLogged.subscribe(x => this.isLogged);
+    this.authService.isLogged.subscribe(x => this.isLogged = x);
   }
 
   logout() {
     this.authService.logout();
+    this.router.navigate(['/']);
   }
 }

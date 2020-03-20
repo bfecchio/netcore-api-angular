@@ -1,4 +1,8 @@
 <mat-toolbar color="primary" class="app-header" *ngIf="isLogged">
-    <div>Test FullStack</div>
+    <span>Test FullStack</span>
+    <span class="fx-spacer"></span>
+    <button mat-icon-button (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
 </mat-toolbar>
 <router-outlet></router-outlet>

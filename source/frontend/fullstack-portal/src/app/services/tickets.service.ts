@@ -18,6 +18,11 @@ export class TicketsService {
     return this.httpClient.get<any>(url);
   }
 
+  public add(ticket: Ticket): Observable<any> {
+    const url = `${environment.urlServices}/api/v1/tickets`;
+    return this.httpClient.post<any>(url, ticket);
+  }
+
   public update(ticket: Ticket): Observable<any> {
     const url = `${environment.urlServices}/api/v1/tickets/${ticket.ticketId}`;
     return this.httpClient.put<any>(url, ticket);

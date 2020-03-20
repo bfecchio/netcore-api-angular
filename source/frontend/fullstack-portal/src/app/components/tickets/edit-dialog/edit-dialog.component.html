@@ -69,7 +69,7 @@
                 <div fxLayout="row" fxLayoutAlign="end center">
                     <button mat-raised-button color="accent" (click)="close()">Cancel</button>
                     <span class="fx-spacer"></span>
-                    <button mat-raised-button color="primary"
+                    <button mat-raised-button color="primary" [disabled]="(!form.valid || !form.dirty)"
                         (click)="save()">Save</button>
                 </div>
             </mat-card-actions>

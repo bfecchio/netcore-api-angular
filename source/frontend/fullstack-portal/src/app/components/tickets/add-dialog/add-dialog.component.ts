@@ -26,22 +26,29 @@ export class AddDialogComponent implements OnInit {
     private airportService: AirportService
   ) { }
 
+
   ngOnInit() {
     this.buildForm();
     this.fillControls();
   }
 
   buildForm() {
-    this.form = new FormGroup({
-      ticketId: new FormControl(this.data.ticketId),
-      passenger: new FormControl(this.data.passenger, Validators.required),
-      airline: new FormControl(this.data.airline.airlineId, Validators.required),
-      origin: new FormControl(this.data.origin.airportId, Validators.required),
-      destination: new FormControl(this.data.destination.airportId, Validators.required),
-      scheduled: new FormControl(this.data.scheduled, Validators.required),      
-      flight: new FormControl(this.data.flight, Validators.required),      
-      gate: new FormControl(this.data.gate, Validators.required),      
+    this.form = new FormGroup({      
+      passenger: new FormControl('', Validators.required),
+      airline: new FormGroup({
+        airlineId: new FormControl('', Validators.required),
+      }),
+      origin: new FormGroup({
+        airportId: new FormControl('', Validators.required)
+      }),
+      destination: new FormGroup({
+        airportId: new FormControl('', Validators.required)
+      }),
+      scheduled: new FormControl(new Date(), Validators.required),      
+      flight: new FormControl('', Validators.required),      
+      gate: new FormControl('', Validators.required),      
     });
+
   }
 
   fillControls() {

@@ -32,6 +32,10 @@ namespace FullStack.Core.Data.Configurations
             builder.HasOne(p => p.Destination)
                 .WithMany()
                 .HasForeignKey(p => p.DestinationId).OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(p => p.Creator)
+                .WithMany()
+                .HasForeignKey(p => p.CreatedBy).OnDelete(DeleteBehavior.Restrict);
         }
 
         #endregion

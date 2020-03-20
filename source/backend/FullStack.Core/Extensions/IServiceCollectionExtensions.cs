@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using System.Reflection;
 using FullStack.Core.Data;
-using FullStack.Core.Helpers;
 using FullStack.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using FullStack.Domain.Constants;
@@ -24,18 +23,14 @@ namespace FullStack.Core.Extensions
         #region Extension Methods
 
         public static IServiceCollection AddCoreDependencies(this IServiceCollection services, bool enableSensitiveData = false)
-        {
-            ConfigHelper.TryGet($"ConnectionStrings:{nameof(EFContext)}", out string connectionString);
-
-            // registra o contexto do EFCore
+        {                        
             services
                 .AddDbContext<EFContext>(options =>
-                {
-                    options.UseSqlServer(connectionString);
+                {                    
+                    options.UseInMemoryDatabase(databaseName: nameof(EFContext));
                     options.EnableSensitiveDataLogging(enableSensitiveData);
                 });
 
-            // registra o contexto do IdentityCore
             services
                 .AddIdentity<AppUser, AppRole>(options =>
                 {
@@ -58,12 +53,10 @@ namespace FullStack.Core.Extensions
                 var factory = x.GetRequiredService<IUrlHelperFactory>();
                 return factory.GetUrlHelper(context);
             });
-
-            //services.AddScoped<IEmailSender, EmailSender>();
+            
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, ClaimsIdentityFactory>();
             services.AddDataProtection().SetApplicationName(IdentityServerApiConstants.ResourceName);
-
-            // registra as camadas lógicas da aplicação
+            
             services.Scan(scan => scan
                 .FromAssemblies(Assembly.GetExecutingAssembly())
                     .AddClasses(c => c.AssignableTo(typeof(IBaseRepository)))

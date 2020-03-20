@@ -20,10 +20,10 @@
                         <input formControlName="passenger" matInput required>
                     </mat-form-field>
                 </div>
-                <div fxLayout="row">
+                <div fxLayout="row" formGroupName="airline">
                     <mat-form-field fxFill>
                         <mat-label>Airlines</mat-label>
-                        <mat-select formControlName="airline" required>
+                        <mat-select formControlName="airlineId" required>
                             <mat-option selected></mat-option>
                             <mat-option *ngFor="let airline of this.airlines" [value]="airline.airlineId">
                                 {{ airline.name }}
@@ -31,10 +31,10 @@
                         </mat-select>
                     </mat-form-field>
                 </div>
-                <div fxLayout="row">
+                <div fxLayout="row" formGroupName="origin">
                     <mat-form-field fxFill>
                         <mat-label>Origin</mat-label>
-                        <mat-select formControlName="origin" required>
+                        <mat-select formControlName="airportId" required>
                             <mat-option selected></mat-option>
                             <mat-option *ngFor="let airport of this.airports" [value]="airport.airportId">
                                 {{ airport.name }}
@@ -42,10 +42,10 @@
                         </mat-select>
                     </mat-form-field>
                 </div>
-                <div fxLayout="row">
+                <div fxLayout="row" formGroupName="destination">
                     <mat-form-field fxFill>
                         <mat-label>Destination</mat-label>
-                        <mat-select formControlName="destination" required>
+                        <mat-select formControlName="airportId" required>
                             <mat-option selected></mat-option>
                             <mat-option *ngFor="let airport of this.airports" [value]="airport.airportId">
                                 {{ airport.name }}
@@ -69,7 +69,7 @@
                 <div fxLayout="row" fxLayoutAlign="end center">
                     <button mat-raised-button color="accent" (click)="close()">Cancel</button>
                     <span class="fx-spacer"></span>
-                    <button mat-raised-button color="primary" [disabled]="!form.valid || !form.dirty"
+                    <button mat-raised-button color="primary" [disabled]="(!form.valid || !form.dirty)"
                         (click)="save()">Create</button>
                 </div>
             </mat-card-actions>
