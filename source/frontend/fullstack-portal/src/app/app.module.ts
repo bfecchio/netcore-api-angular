@@ -15,6 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { AuthInterceptor } from './middlewares/auth.interceptor';
 import { AddDialogComponent } from './components/tickets/add-dialog/add-dialog.component';
+import { EditDialogComponent } from './components/tickets/edit-dialog/edit-dialog.component';
+import { DeleteDialogComponent } from './components/tickets/delete-dialog/delete-dialog.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { AddDialogComponent } from './components/tickets/add-dialog/add-dialog.c
     AppComponent,
     LoginComponent,
     TicketsComponent,
-    AddDialogComponent
+    AddDialogComponent,
+    EditDialogComponent,
+    DeleteDialogComponent
   ],
   imports: [
     BrowserModule,

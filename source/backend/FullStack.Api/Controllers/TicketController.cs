@@ -130,7 +130,7 @@ namespace FullStack.Api.Controllers
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Post([FromRoute]int ticketId, [FromBody]TicketPutRequest request)
+        public async Task<IActionResult> Put([FromRoute]int ticketId, [FromBody]TicketPutRequest request)
         {
             if (ModelState.IsValid)
             {
@@ -148,6 +148,24 @@ namespace FullStack.Api.Controllers
             }
 
             return BadRequest(ModelState.ToErrorResponse());
+        }
+
+        [HttpDelete("{ticketId:int}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> Delete([FromRoute]int ticketId)
+        {            
+            var entity = await _ticketService.Get(ticketId);
+            if (entity == null)
+                return NotFound(ErrorResponse.DefaultNotFoundResponse());
+
+            await _ticketService.Delete(entity);
+            await UnitOfWork.CompleteAsync();
+
+            return NoContent();                        
         }
 
         #endregion

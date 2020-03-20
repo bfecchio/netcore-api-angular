@@ -35,9 +35,9 @@ namespace FullStack.Api.Infrastructure.Mappings
                 .ForMember(dest => dest.Flight, opts => opts.MapFrom(src => src.Flight))
                 .ForMember(dest => dest.Gate, opts => opts.MapFrom(src => src.Gate))
                 .ForMember(dest => dest.Scheduled, opts => opts.MapFrom(src => src.Scheduled))
-                .ForMember(dest => dest.AirlineId, opts => opts.MapFrom(src => src.AirlineId))
-                .ForMember(dest => dest.OriginId, opts => opts.MapFrom(src => src.OriginId))
-                .ForMember(dest => dest.DestinationId, opts => opts.MapFrom(src => src.DestinationId))
+                .ForMember(dest => dest.AirlineId, opts => opts.MapFrom(src => src.Airline.AirlineId))
+                .ForMember(dest => dest.OriginId, opts => opts.MapFrom(src => src.Origin.AirportId))
+                .ForMember(dest => dest.DestinationId, opts => opts.MapFrom(src => src.Destination.AirportId))
                 .ForAllOtherMembers(opts => opts.Ignore());
 
             CreateMap<TicketPutRequest, Ticket>()
@@ -45,9 +45,9 @@ namespace FullStack.Api.Infrastructure.Mappings
                 .ForMember(dest => dest.Flight, opts => opts.MapFrom(src => src.Flight))
                 .ForMember(dest => dest.Gate, opts => opts.MapFrom(src => src.Gate))
                 .ForMember(dest => dest.Scheduled, opts => opts.MapFrom(src => src.Scheduled))
-                .ForMember(dest => dest.AirlineId, opts => opts.MapFrom(src => src.AirlineId))
-                .ForMember(dest => dest.OriginId, opts => opts.MapFrom(src => src.OriginId))
-                .ForMember(dest => dest.DestinationId, opts => opts.MapFrom(src => src.DestinationId))
+                .ForMember(dest => dest.AirlineId, opts => opts.MapFrom(src => src.Airline.AirlineId))
+                .ForMember(dest => dest.OriginId, opts => opts.MapFrom(src => src.Origin.AirportId))
+                .ForMember(dest => dest.DestinationId, opts => opts.MapFrom(src => src.Destination.AirportId))
                 .ForAllOtherMembers(opts => opts.Ignore());
         }
 

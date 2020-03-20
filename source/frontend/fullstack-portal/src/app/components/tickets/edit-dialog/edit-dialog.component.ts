@@ -9,22 +9,23 @@ import { Airport } from 'src/app/models/airport';
 import { Ticket } from 'src/app/models/ticket';
 
 @Component({
-  selector: 'app-add-dialog',
-  templateUrl: './add-dialog.component.html',
-  styleUrls: ['./add-dialog.component.css']
+  selector: 'app-edit-dialog',
+  templateUrl: './edit-dialog.component.html',
+  styleUrls: ['./edit-dialog.component.css']
 })
-export class AddDialogComponent implements OnInit {
+export class EditDialogComponent implements OnInit {
   form: FormGroup;
   today: Date = new Date();
   airlines: Airline[] = [];
   airports: Airport[] = [];
 
-  constructor(    
-    private dialogRef: MatDialogRef<AddDialogComponent>,
+  constructor(
+    private dialogRef: MatDialogRef<EditDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Ticket,
     private airlineService: AirlineService,
     private airportService: AirportService
   ) { }
+
 
   ngOnInit() {
     this.buildForm();
@@ -35,13 +36,20 @@ export class AddDialogComponent implements OnInit {
     this.form = new FormGroup({
       ticketId: new FormControl(this.data.ticketId),
       passenger: new FormControl(this.data.passenger, Validators.required),
-      airline: new FormControl(this.data.airline.airlineId, Validators.required),
-      origin: new FormControl(this.data.origin.airportId, Validators.required),
-      destination: new FormControl(this.data.destination.airportId, Validators.required),
+      airline: new FormGroup({
+        airlineId: new FormControl(this.data.airline.airlineId, Validators.required),
+      }),
+      origin: new FormGroup({
+        airportId: new FormControl(this.data.origin.airportId, Validators.required)
+      }),
+      destination: new FormGroup({
+        airportId: new FormControl(this.data.destination.airportId, Validators.required)
+      }),
       scheduled: new FormControl(this.data.scheduled, Validators.required),      
       flight: new FormControl(this.data.flight, Validators.required),      
       gate: new FormControl(this.data.gate, Validators.required),      
     });
+
   }
 
   fillControls() {

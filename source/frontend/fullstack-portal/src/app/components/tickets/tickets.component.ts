@@ -9,8 +9,10 @@ import { AirportService } from 'src/app/services/airport.service';
 import { AirlineService } from 'src/app/services/airline.service';
 import { TicketsService } from 'src/app/services/tickets.service';
 import * as moment from 'moment';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { AddDialogComponent } from './add-dialog/add-dialog.component';
+import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
+import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-tickets',
@@ -56,20 +58,59 @@ export class TicketsComponent implements OnInit {
     this.onSearch();
   }
 
-  public addTicket() {
-    const dialogRef = this.dialog.open(AddDialogComponent, {
-      data: { ticket: new Ticket() }
+  public add() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.data = new Ticket();
+
+    const dialogRef = this.dialog.open(AddDialogComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe(result => {
+      if (!result) {
+        return;
+      }
+
+      console.log(result);
     });
   }
 
-  public editTicket(ticket: Ticket) {
-    
+  public edit(ticketId: number) {
+    this.ticketService.get(ticketId).subscribe(result => {
+      const dialogConfig = new MatDialogConfig();
+      dialogConfig.disableClose = true;
+      dialogConfig.autoFocus = true;
+      dialogConfig.data = result.data;
+
+      const dialogRef = this.dialog.open(EditDialogComponent, dialogConfig);
+      dialogRef.afterClosed().subscribe(result => {
+        if (!result) {
+          return;
+        }
+
+        this.ticketService.update(result)
+          .subscribe(_ => this.onSearch());
+      });
+    });
   }
 
-   
-  public deleteTicket(ticket: Ticket) {
-    
-  } 
+
+  public delete(ticket: Ticket) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.data = {
+      message: `Delete #${ticket.ticketId} - ${ticket.airline.name}?`
+    };
+
+    const dialogRef = this.dialog.open(DeleteDialogComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.dataSource.data = this.dataSource.data.filter(e => e != ticket);
+        this.ticketService.delete(ticket.ticketId).subscribe();
+      }
+    });
+  }
 
 
   public get form() { return this.searchForm.controls; }
