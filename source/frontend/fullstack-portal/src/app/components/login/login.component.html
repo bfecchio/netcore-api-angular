@@ -1,0 +1,30 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Test FullStack</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="loginForm" class="example-form" (ngSubmit)="onSubmit()">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter your username</mat-label>
+          <input formControlName="username" matInput required>
+          <mat-error *ngIf="this.form.username.invalid">Username is required.</mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter your password</mat-label>
+          <input formControlName="password" matInput type="password" required>
+          <mat-error *ngIf="this.form.password.invalid">Password is required.</mat-error>
+        </mat-form-field>
+      </mat-card-content>
+      <button [disabled]="loading" class="btn-block" mat-raised-button color="primary">
+        Login
+        <mat-icon *ngIf="loading">
+          <mat-spinner color="accent" diameter="20"></mat-spinner>
+        </mat-icon>
+      </button>
+      <mat-error *ngIf="error">
+        {{error}}
+      </mat-error>      
+    </form>
+  </mat-card>
+</div>

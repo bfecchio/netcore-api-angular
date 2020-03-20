@@ -1,0 +1,95 @@
+<div class="tickets-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Tickets list</mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="searchForm" autocomplete="off">
+            <mat-card-content>
+                <div fxLayout="row">
+                    <button mat-raised-button color="primary">
+                        <mat-icon>add</mat-icon>New ticket
+                    </button>
+                </div>
+                <div fxLayout="row" fxLayoutGap="40px">
+                    <mat-form-field>
+                        <mat-label>Airlines</mat-label>
+                        <mat-select formControlName="airline" (selectionChange)="onSearch()">
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let item of airlines" [value]="item.airlineId">
+                                {{ item.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Origin</mat-label>
+                        <mat-select formControlName="origin" (selectionChange)="onSearch()">
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let airport of airports" [value]="airport.airportId">
+                                {{ airport.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Destination</mat-label>
+                        <mat-select formControlName="destination" (selectionChange)="onSearch()">
+                            <mat-option selected></mat-option>
+                            <mat-option *ngFor="let airport of airports" [value]="airport.airportId">
+                                {{ airport.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+
+                <div fxLayout="column">
+                    <table mat-table [dataSource]="dataSource">
+                        <ng-container matColumnDef="ticketId">
+                            <th mat-header-cell *matHeaderCellDef>TicketId</th>
+                            <td mat-cell *matCellDef="let element">{{ element.ticketId }}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="passenger">
+                            <th mat-header-cell *matHeaderCellDef>Passenger</th>
+                            <td mat-cell *matCellDef="let element">{{ element.passenger }}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="airline">
+                            <th mat-header-cell *matHeaderCellDef>Airline</th>
+                            <td mat-cell *matCellDef="let element">{{ element.airline.name }}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="origin">
+                            <th mat-header-cell *matHeaderCellDef>Origin</th>
+                            <td mat-cell *matCellDef="let element">{{ element.origin.name }}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="destination">
+                            <th mat-header-cell *matHeaderCellDef>Destination</th>
+                            <td mat-cell *matCellDef="let element">{{ element.destination.name }}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="scheduled">
+                            <th mat-header-cell *matHeaderCellDef>Scheduled</th>
+                            <td mat-cell *matCellDef="let element">
+                                {{ element.scheduled  | date: 'dd/MM/yyyy hh:mm' }}
+                            </td>
+                        </ng-container>
+                        <ng-container matColumnDef="actions">                                
+                            <th mat-header-cell *matHeaderCellDef></th>
+                            <td mat-cell *matCellDef="let element">
+                                <a (click)="openDialog('update', element)">Edit</a> |
+                                <a (click)="openDialog('delete', element)">Delete</a> 
+                            </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                    <mat-paginator
+                        [length]="length" 
+                        [pageSizeOptions]="[5, 10, 20]"
+                        (page)="onChangePaginator($event)">
+                    </mat-paginator>
+                </div>
+            </mat-card-content>
+        </form>
+    </mat-card>
+
+</div>

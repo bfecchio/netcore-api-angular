@@ -2,6 +2,7 @@
 using AutoMapper;
 using NSwag.Annotations;
 using System.Threading.Tasks;
+using FullStack.Core.Helpers;
 using FullStack.Api.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using FullStack.Core.Extensions;
 using FullStack.Domain.Entities;
 using Microsoft.Extensions.Logging;
 using FullStack.Api.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using FullStack.Api.Contracts.Schemas;
 using FullStack.Api.Contracts.Requests;
 using FullStack.Api.Contracts.Responses;
@@ -49,8 +51,25 @@ namespace FullStack.Api.Controllers
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> List([FromQuery]TicketListRequest request)
-        {
-            var result = await _ticketService.PagedList(request.PageIndex, request.PageSize);
+        {            
+            var predicate = PredicateBuilder.True<Ticket>();
+
+            if (request.AirlineId.HasValue)
+                predicate = predicate.And(x => x.AirlineId == request.AirlineId.Value);
+
+            if (request.OriginId.HasValue)
+                predicate = predicate.And(x => x.OriginId == request.OriginId.Value);
+
+            if (request.DestinationId.HasValue)
+                predicate = predicate.And(x => x.DestinationId == request.DestinationId.Value);
+
+            var result = await _ticketService.PagedList(request.PageIndex, request.PageSize
+                , predicate
+                , include: x => x
+                    .Include(i => i.Airline)
+                    .Include(i => i.Origin)
+                    .Include(i => i.Destination)
+            );
 
             return Ok(new TicketListResponse(result.PageIndex, result.PageSize, result.Total)
             {
